@@ -49,6 +49,8 @@ The unit tests are compiled using the `waf` build tool:
     Scripting runtime checks                       : enabled 
     Checking for program 'rsync'                   : /usr/bin/rsync 
     'configure' finished successfully (1.085s)
+    
+    
     pbarker@bluebottle:~/rc/ardupilot(master)$ ./waf tests
     Waf: Entering directory `/home/pbarker/rc/ardupilot/build/linux'
     Waf: Leaving directory `/home/pbarker/rc/ardupilot/build/linux'
