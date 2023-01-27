@@ -75,40 +75,30 @@ If in a VTOL motors are active when QRTL is entered the vehicle will first climb
 Altitude will be above terrain if terrain following is enabled, if not altitude will be above home.
 
 .. raw:: html
-   <embed>
 
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-   <meta charset="utf-8" />
-   <title>QRTL Altitude Interactive</title>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-   </head>
-   <body onload="update();">
    <canvas id="QRTL_Altitude" style="width:100%;max-width:1200px"></canvas>
-      <p>
-         <label for="Q_RTL_ALT">Q_RTL_ALT</label>
-         <input id="Q_RTL_ALT" name="Q_RTL_ALT" type="number" step="1" value="15" min="0" onchange="update();"/>
-      </p>
-      <p>
-         <label for="Q_RTL_ALT_MIN">Q_RTL_ALT_MIN</label>
-         <input id="Q_RTL_ALT_MIN" name="Q_RTL_ALT_MIN" type="number" step="1" value="10.0" min="0" onchange="update();"/>
-      </p>
-      <p>
-         <label for="RTL_RADIUS">RTL_RADIUS</label>
-         <input id="RTL_RADIUS" name="RTL_RADIUS" type="number" step="1" value="0" onchange="update();"/>
-      </p>
-      <p>
-         <label for="WP_LOITER_RAD">WP_LOITER_RAD</label>
-         <input id="WP_LOITER_RAD" name="WP_LOITER_RAD" type="number" step="1" value="60" onchange="update();"/>
-      </p>
-      <p>
-         <label for="Q_LAND_FINAL">Q_LAND_FINAL</label>
-         <input id="Q_LAND_FINAL" name="Q_LAND_FINAL" type="number" step="0.5" value="6" min="0" onchange="update();"/>
-      </p>
+
+   <p>
+   <label class="parameter_input_label" for="Q_RTL_ALT">Q_RTL_ALT</label>
+   <input id="Q_RTL_ALT" name="Q_RTL_ALT" type="number" step="1" value="15" min="0" onchange="update()"/>
+
+   <label class="parameter_input_label" for="Q_RTL_ALT_MIN">Q_RTL_ALT_MIN</label>
+   <input id="Q_RTL_ALT_MIN" name="Q_RTL_ALT_MIN" type="number" step="1" value="10.0" min="0" onchange="update()"/>
+
+   <label class="parameter_input_label" for="RTL_RADIUS">RTL_RADIUS</label>
+   <input id="RTL_RADIUS" name="RTL_RADIUS" type="number" step="1" value="0" onchange="update()"/>
+
+   <label class="parameter_input_label" for="WP_LOITER_RAD">WP_LOITER_RAD</label>
+   <input id="WP_LOITER_RAD" name="WP_LOITER_RAD" type="number" step="1" value="60" onchange="update()"/>
+
+   <label class="parameter_input_label" for="Q_LAND_FINAL">Q_LAND_FINAL</label>
+   <input id="Q_LAND_FINAL" name="Q_LAND_FINAL" type="number" step="0.5" value="6" min="0" onchange="update()"/>
+   </p>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
    <script>
-   var chart;
+   var chart
    function update() {
       var Q_RTL_ALT = parseFloat(document.getElementById("Q_RTL_ALT").value)
       var Q_RTL_ALT_MIN = parseFloat(document.getElementById("Q_RTL_ALT_MIN").value)
@@ -169,7 +159,6 @@ Altitude will be above terrain if terrain following is enabled, if not altitude 
                   ]
             },
             options: {
-                  aspectRatio: 3,
                   scales: {
                      yAxes: [
                         {
@@ -187,16 +176,13 @@ Altitude will be above terrain if terrain following is enabled, if not altitude 
             }
          });
       } else {
-         chart.data.datasets[0].data = alt;
-         chart.data.datasets[1].data = land_final;
-         chart.options.scales.xAxes[0].ticks.max = max_disp_rad;
-         chart.options.scales.yAxes[0].ticks.max = max_disp_alt;
-         chart.update();
+         chart.data.datasets[0].data = alt
+         chart.data.datasets[1].data = land_final
+         chart.options.scales.xAxes[0].ticks.max = max_disp_rad
+         chart.options.scales.yAxes[0].ticks.max = max_disp_alt
+         chart.update()
       }
    }
+   update()
    </script>
 
-   </body>
-   </html>
-
-   </embed>
