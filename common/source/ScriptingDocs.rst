@@ -4,7 +4,7 @@ AC_AttitudeControl
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -21,7 +21,7 @@ AC_AttitudeControl.get_rpy_srate
 
 @\ *return* — yaw slew rate
 
-.. code-block:: lua
+.. code-block::
 
    (method) AC_AttitudeControl:get_rpy_srate()
      -> number
@@ -33,7 +33,7 @@ AC_AttitudeControl.get_rpy_srate
 AP_Camera__camera_state_t
 =========================
 
-.. code-block:: lua
+.. code-block::
 
    function AP_Camera__camera_state_t()
      -> AP_Camera__camera_state_t_ud
@@ -48,7 +48,7 @@ AP_Camera__camera_state_t_ud
 focus_type
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Camera__camera_state_t_ud:focus_type()
      -> integer
@@ -58,7 +58,7 @@ focus_type
 focus_value
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Camera__camera_state_t_ud:focus_value()
      -> number
@@ -68,7 +68,7 @@ focus_value
 recording_video
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Camera__camera_state_t_ud:recording_video()
      -> boolean
@@ -78,7 +78,7 @@ recording_video
 take_pic_incr
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Camera__camera_state_t_ud:take_pic_incr()
      -> integer
@@ -88,7 +88,7 @@ take_pic_incr
 tracking_p1
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Camera__camera_state_t_ud:tracking_p1()
      -> Vector2f_ud
@@ -98,7 +98,7 @@ tracking_p1
 tracking_p2
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Camera__camera_state_t_ud:tracking_p2()
      -> Vector2f_ud
@@ -108,7 +108,7 @@ tracking_p2
 tracking_type
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Camera__camera_state_t_ud:tracking_type()
      -> integer
@@ -118,7 +118,7 @@ tracking_type
 zoom_type
 ---------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Camera__camera_state_t_ud:zoom_type()
      -> integer
@@ -128,7 +128,7 @@ zoom_type
 zoom_value
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Camera__camera_state_t_ud:zoom_value()
      -> number
@@ -145,7 +145,7 @@ AP_EFI_Backend_ud
 handle_scripting
 ----------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_EFI_Backend_ud:handle_scripting(state: EFI_State_ud)
      -> boolean
@@ -162,7 +162,7 @@ AP_HAL__AnalogSource_ud
 set_pin
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__AnalogSource_ud:set_pin(pin_number: integer)
      -> boolean
@@ -172,7 +172,7 @@ set_pin
 voltage_average
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__AnalogSource_ud:voltage_average()
      -> number
@@ -182,7 +182,7 @@ voltage_average
 voltage_average_ratiometric
 ---------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__AnalogSource_ud:voltage_average_ratiometric()
      -> number
@@ -192,7 +192,7 @@ voltage_average_ratiometric
 voltage_latest
 --------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__AnalogSource_ud:voltage_latest()
      -> number
@@ -209,7 +209,7 @@ AP_HAL__I2CDevice_ud
 read_registers
 --------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__I2CDevice_ud:read_registers(register_num: integer, read_length?: integer)
      -> integer|table|nil
@@ -220,7 +220,7 @@ read_registers
 set_address
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__I2CDevice_ud:set_address(address: integer)
 
@@ -229,7 +229,7 @@ set_address
 set_retries
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__I2CDevice_ud:set_retries(retries: integer)
 
@@ -238,7 +238,7 @@ set_retries
 write_register
 --------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__I2CDevice_ud:write_register(register_num: integer, value: integer)
      -> boolean
@@ -255,7 +255,7 @@ AP_HAL__PWMSource_ud
 get_pwm_avg_us
 --------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__PWMSource_ud:get_pwm_avg_us()
      -> integer
@@ -265,7 +265,7 @@ get_pwm_avg_us
 get_pwm_us
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__PWMSource_ud:get_pwm_us()
      -> integer
@@ -275,7 +275,7 @@ get_pwm_us
 set_pin
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__PWMSource_ud:set_pin(pin_number: integer)
      -> boolean
@@ -292,7 +292,7 @@ AP_HAL__UARTDriver_ud
 available
 ---------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__UARTDriver_ud:available()
      -> uint32_t_ud
@@ -302,7 +302,7 @@ available
 begin
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__UARTDriver_ud:begin(baud_rate: number|uint32_t_ud)
 
@@ -311,7 +311,7 @@ begin
 read
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__UARTDriver_ud:read()
      -> integer
@@ -323,7 +323,7 @@ read
 readstring
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__UARTDriver_ud:readstring(count: integer)
      -> string|nil
@@ -336,13 +336,13 @@ read count bytes from a uart and return as a lua string. Note
 set_flow_control
 ----------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__UARTDriver_ud:set_flow_control(flow_control_setting: integer|'0'|'1'|'2')
 
  Set flow control option for serial port
 
-.. code-block:: lua
+.. code-block::
 
    flow_control_setting:
        | '0' -- disabled
@@ -352,7 +352,7 @@ set_flow_control
 write
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_HAL__UARTDriver_ud:write(value: integer)
      -> uint32_t_ud
@@ -373,7 +373,7 @@ AP_Proximity_Backend_ud
 handle_script_3d_msg
 --------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Proximity_Backend_ud:handle_script_3d_msg(vector_3d: Vector3f_ud, update_boundary: boolean)
      -> boolean
@@ -383,7 +383,7 @@ handle_script_3d_msg
 handle_script_distance_msg
 --------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Proximity_Backend_ud:handle_script_distance_msg(dist_m: number, yaw_deg: number, pitch_deg: number, update_boundary: boolean)
      -> boolean
@@ -393,7 +393,7 @@ handle_script_distance_msg
 set_distance_min_max
 --------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Proximity_Backend_ud:set_distance_min_max(min: number, max: number)
      -> boolean
@@ -403,7 +403,7 @@ set_distance_min_max
 type
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Proximity_Backend_ud:type()
      -> integer
@@ -413,7 +413,7 @@ type
 update_virtual_boundary
 -----------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_Proximity_Backend_ud:update_virtual_boundary()
      -> boolean
@@ -430,7 +430,7 @@ AP_RangeFinder_Backend_ud
 distance
 --------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_RangeFinder_Backend_ud:distance()
      -> number
@@ -440,7 +440,7 @@ distance
 get_state
 ---------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_RangeFinder_Backend_ud:get_state()
      -> RangeFinder_State_ud
@@ -450,7 +450,7 @@ get_state
 handle_script_msg
 -----------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_RangeFinder_Backend_ud:handle_script_msg(state: number|RangeFinder_State_ud)
      -> boolean
@@ -460,7 +460,7 @@ handle_script_msg
 orientation
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_RangeFinder_Backend_ud:orientation()
      -> integer
@@ -470,7 +470,7 @@ orientation
 signal_quality
 --------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_RangeFinder_Backend_ud:signal_quality()
      -> number
@@ -480,7 +480,7 @@ signal_quality
 status
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_RangeFinder_Backend_ud:status()
      -> integer
@@ -490,7 +490,7 @@ status
 type
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) AP_RangeFinder_Backend_ud:type()
      -> integer
@@ -504,7 +504,7 @@ AR_AttitudeControl
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -519,7 +519,7 @@ AR_AttitudeControl.get_srate
 
 @\ *return* — spees slew rate
 
-.. code-block:: lua
+.. code-block::
 
    (method) AR_AttitudeControl:get_srate()
      -> number
@@ -532,7 +532,7 @@ AR_PosControl
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -545,7 +545,7 @@ AR_PosControl.get_srate
 
 @\ *return* — velocity slew rate
 
-.. code-block:: lua
+.. code-block::
 
    (method) AR_PosControl:get_srate()
      -> number
@@ -555,7 +555,7 @@ AR_PosControl.get_srate
 BattMonitorScript_State
 =======================
 
-.. code-block:: lua
+.. code-block::
 
    function BattMonitorScript_State()
      -> BattMonitorScript_State_ud
@@ -570,7 +570,7 @@ BattMonitorScript_State_ud
 capacity_remaining_pct
 ----------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) BattMonitorScript_State_ud:capacity_remaining_pct(value: integer)
 
@@ -579,7 +579,7 @@ capacity_remaining_pct
 cell_count
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) BattMonitorScript_State_ud:cell_count(value: integer)
 
@@ -588,7 +588,7 @@ cell_count
 cell_voltages
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) BattMonitorScript_State_ud:cell_voltages(index: integer, value: integer)
 
@@ -597,7 +597,7 @@ cell_voltages
 consumed_mah
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) BattMonitorScript_State_ud:consumed_mah(value: number)
 
@@ -606,7 +606,7 @@ consumed_mah
 consumed_wh
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) BattMonitorScript_State_ud:consumed_wh(value: number)
 
@@ -615,7 +615,7 @@ consumed_wh
 current_amps
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) BattMonitorScript_State_ud:current_amps(value: number)
 
@@ -624,7 +624,7 @@ current_amps
 cycle_count
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) BattMonitorScript_State_ud:cycle_count(value: integer)
 
@@ -633,7 +633,7 @@ cycle_count
 healthy
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) BattMonitorScript_State_ud:healthy(value: boolean)
 
@@ -642,7 +642,7 @@ healthy
 temperature
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) BattMonitorScript_State_ud:temperature(value: number)
 
@@ -651,7 +651,7 @@ temperature
 voltage
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) BattMonitorScript_State_ud:voltage(value: number)
 
@@ -664,7 +664,7 @@ CAN
 
  CAN bus interaction
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -677,7 +677,7 @@ CAN.get_device
 
 @\ *param* ``buffer_len`` — buffer length 1 to 25
 
-.. code-block:: lua
+.. code-block::
 
    (method) CAN:get_device(buffer_len: number|uint32_t_ud)
      -> ScriptingCANBuffer_ud|nil
@@ -691,7 +691,7 @@ CAN.get_device2
 
 @\ *param* ``buffer_len`` — buffer length 1 to 25
 
-.. code-block:: lua
+.. code-block::
 
    (method) CAN:get_device2(buffer_len: number|uint32_t_ud)
      -> ScriptingCANBuffer_ud|nil
@@ -701,7 +701,7 @@ CAN.get_device2
 CANFrame
 ========
 
-.. code-block:: lua
+.. code-block::
 
    function CANFrame()
      -> CANFrame_ud
@@ -716,7 +716,7 @@ CANFrame_ud
 data
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) CANFrame_ud:data(index: integer)
      -> integer
@@ -726,7 +726,7 @@ data
 dlc
 ---
 
-.. code-block:: lua
+.. code-block::
 
    (method) CANFrame_ud:dlc()
      -> integer
@@ -736,7 +736,7 @@ dlc
 id
 --
 
-.. code-block:: lua
+.. code-block::
 
    (method) CANFrame_ud:id()
      -> uint32_t_ud
@@ -746,7 +746,7 @@ id
 id_signed
 ---------
 
-.. code-block:: lua
+.. code-block::
 
    (method) CANFrame_ud:id_signed()
      -> integer
@@ -756,7 +756,7 @@ id_signed
 isErrorFrame
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) CANFrame_ud:isErrorFrame()
      -> boolean
@@ -766,7 +766,7 @@ isErrorFrame
 isExtended
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) CANFrame_ud:isExtended()
      -> boolean
@@ -776,7 +776,7 @@ isExtended
 isRemoteTransmissionRequest
 ---------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) CANFrame_ud:isRemoteTransmissionRequest()
      -> boolean
@@ -788,7 +788,7 @@ isRemoteTransmissionRequest
 Cylinder_Status
 ===============
 
-.. code-block:: lua
+.. code-block::
 
    function Cylinder_Status()
      -> Cylinder_Status_ud
@@ -803,7 +803,7 @@ Cylinder_Status_ud
 cylinder_head_temperature
 -------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Cylinder_Status_ud:cylinder_head_temperature()
      -> number
@@ -813,7 +813,7 @@ cylinder_head_temperature
 cylinder_head_temperature2
 --------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Cylinder_Status_ud:cylinder_head_temperature2()
      -> number
@@ -823,7 +823,7 @@ cylinder_head_temperature2
 exhaust_gas_temperature
 -----------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Cylinder_Status_ud:exhaust_gas_temperature()
      -> number
@@ -833,7 +833,7 @@ exhaust_gas_temperature
 exhaust_gas_temperature2
 ------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Cylinder_Status_ud:exhaust_gas_temperature2()
      -> number
@@ -843,7 +843,7 @@ exhaust_gas_temperature2
 ignition_timing_deg
 -------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Cylinder_Status_ud:ignition_timing_deg()
      -> number
@@ -853,7 +853,7 @@ ignition_timing_deg
 injection_time_ms
 -----------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Cylinder_Status_ud:injection_time_ms()
      -> number
@@ -863,7 +863,7 @@ injection_time_ms
 lambda_coefficient
 ------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Cylinder_Status_ud:lambda_coefficient()
      -> number
@@ -875,7 +875,7 @@ lambda_coefficient
 EFI_State
 =========
 
-.. code-block:: lua
+.. code-block::
 
    function EFI_State()
      -> EFI_State_ud
@@ -890,7 +890,7 @@ EFI_State_ud
 atmospheric_pressure_kpa
 ------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:atmospheric_pressure_kpa()
      -> number
@@ -900,7 +900,7 @@ atmospheric_pressure_kpa
 coolant_temperature
 -------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:coolant_temperature()
      -> number
@@ -910,7 +910,7 @@ coolant_temperature
 cylinder_status
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:cylinder_status()
      -> Cylinder_Status_ud
@@ -920,7 +920,7 @@ cylinder_status
 ecu_index
 ---------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:ecu_index()
      -> integer
@@ -930,7 +930,7 @@ ecu_index
 engine_load_percent
 -------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:engine_load_percent()
      -> integer
@@ -940,7 +940,7 @@ engine_load_percent
 engine_speed_rpm
 ----------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:engine_speed_rpm()
      -> uint32_t_ud
@@ -950,7 +950,7 @@ engine_speed_rpm
 estimated_consumed_fuel_volume_cm3
 ----------------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:estimated_consumed_fuel_volume_cm3()
      -> number
@@ -960,7 +960,7 @@ estimated_consumed_fuel_volume_cm3
 fuel_consumption_rate_cm3pm
 ---------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:fuel_consumption_rate_cm3pm()
      -> number
@@ -970,7 +970,7 @@ fuel_consumption_rate_cm3pm
 fuel_pressure
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:fuel_pressure()
      -> number
@@ -980,14 +980,14 @@ fuel_pressure
 fuel_pressure_status
 --------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:fuel_pressure_status()
      -> integer|'0'|'1'|'2'|'3'
 
  get field
 
-.. code-block:: lua
+.. code-block::
 
    return #1:
        | '0' -- Not supported
@@ -998,7 +998,7 @@ fuel_pressure_status
 general_error
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:general_error()
      -> boolean
@@ -1008,7 +1008,7 @@ general_error
 ignition_voltage
 ----------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:ignition_voltage()
      -> number
@@ -1018,7 +1018,7 @@ ignition_voltage
 intake_manifold_pressure_kpa
 ----------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:intake_manifold_pressure_kpa()
      -> number
@@ -1028,7 +1028,7 @@ intake_manifold_pressure_kpa
 intake_manifold_temperature
 ---------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:intake_manifold_temperature()
      -> number
@@ -1038,7 +1038,7 @@ intake_manifold_temperature
 last_updated_ms
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:last_updated_ms()
      -> uint32_t_ud
@@ -1048,7 +1048,7 @@ last_updated_ms
 oil_pressure
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:oil_pressure()
      -> number
@@ -1058,7 +1058,7 @@ oil_pressure
 oil_temperature
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:oil_temperature()
      -> number
@@ -1068,7 +1068,7 @@ oil_temperature
 pt_compensation
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:pt_compensation()
      -> number
@@ -1078,7 +1078,7 @@ pt_compensation
 spark_dwell_time_ms
 -------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:spark_dwell_time_ms()
      -> number
@@ -1088,7 +1088,7 @@ spark_dwell_time_ms
 throttle_out
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:throttle_out()
      -> number
@@ -1098,7 +1098,7 @@ throttle_out
 throttle_position_percent
 -------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) EFI_State_ud:throttle_position_percent()
      -> integer
@@ -1110,7 +1110,7 @@ throttle_position_percent
 ESCTelemetryData
 ================
 
-.. code-block:: lua
+.. code-block::
 
    function ESCTelemetryData()
      -> ESCTelemetryData_ud
@@ -1125,7 +1125,7 @@ ESCTelemetryData_ud
 consumption_mah
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) ESCTelemetryData_ud:consumption_mah(value: number)
 
@@ -1134,7 +1134,7 @@ consumption_mah
 current
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) ESCTelemetryData_ud:current(value: number)
 
@@ -1143,7 +1143,7 @@ current
 motor_temp_cdeg
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) ESCTelemetryData_ud:motor_temp_cdeg(value: integer)
 
@@ -1152,7 +1152,7 @@ motor_temp_cdeg
 temperature_cdeg
 ----------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) ESCTelemetryData_ud:temperature_cdeg(value: integer)
 
@@ -1161,7 +1161,7 @@ temperature_cdeg
 voltage
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) ESCTelemetryData_ud:voltage(value: number)
 
@@ -1174,7 +1174,7 @@ FWVersion
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -1185,7 +1185,7 @@ FWVersion.hash
 
  get field
 
-.. code-block:: lua
+.. code-block::
 
    (method) FWVersion:hash()
      -> string
@@ -1197,7 +1197,7 @@ FWVersion.major
 
  get field
 
-.. code-block:: lua
+.. code-block::
 
    (method) FWVersion:major()
      -> integer
@@ -1209,7 +1209,7 @@ FWVersion.minor
 
  get field
 
-.. code-block:: lua
+.. code-block::
 
    (method) FWVersion:minor()
      -> integer
@@ -1221,7 +1221,7 @@ FWVersion.patch
 
  get field
 
-.. code-block:: lua
+.. code-block::
 
    (method) FWVersion:patch()
      -> integer
@@ -1233,7 +1233,7 @@ FWVersion.string
 
  get field
 
-.. code-block:: lua
+.. code-block::
 
    (method) FWVersion:string()
      -> string
@@ -1245,7 +1245,7 @@ FWVersion.type
 
 get APM\ *BUILD*\ ? value from AP_Vehicle/AP_Vehicle_Type.h that is checked against APM_BUILD_TYPE()
 
-.. code-block:: lua
+.. code-block::
 
    return #1:
        | '1' -- Rover
@@ -1257,7 +1257,7 @@ get APM\ *BUILD*\ ? value from AP_Vehicle/AP_Vehicle_Type.h that is checked agai
        | '12' -- Blimp
        | '13' -- Heli
 
-.. code-block:: lua
+.. code-block::
 
    (method) FWVersion:type()
      -> integer|'1'|'12'|'13'|'2'...(+4)
@@ -1269,7 +1269,7 @@ LED
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -1280,7 +1280,7 @@ LED.get_rgb
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) LED:get_rgb()
      -> integer
@@ -1294,7 +1294,7 @@ Location
 
  Create location object
 
-.. code-block:: lua
+.. code-block::
 
    function Location()
      -> Location_ud
@@ -1311,7 +1311,7 @@ Location_ud
 alt
 ---
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:alt()
      -> integer
@@ -1323,7 +1323,7 @@ alt
 change_alt_frame
 ----------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:change_alt_frame(desired_frame: integer|'0'|'1'|'2'|'3')
      -> boolean
@@ -1332,7 +1332,7 @@ change_alt_frame
 
 @\ *param* ``desired_frame`` — altitude frame
 
-.. code-block:: lua
+.. code-block::
 
    desired_frame:
        | '0' -- ABSOLUTE
@@ -1343,7 +1343,7 @@ change_alt_frame
 copy
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:copy()
      -> Location_ud
@@ -1355,14 +1355,14 @@ copy
 get_alt_frame
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:get_alt_frame()
      -> integer|'0'|'1'|'2'|'3'
 
  get altitude frame of this location
 
-.. code-block:: lua
+.. code-block::
 
    return #1:
        | '0' -- ABSOLUTE
@@ -1373,7 +1373,7 @@ get_alt_frame
 get_bearing
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:get_bearing(loc: Location_ud)
      -> number
@@ -1387,7 +1387,7 @@ get_bearing
 get_distance
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:get_distance(loc: Location_ud)
      -> number
@@ -1401,7 +1401,7 @@ get_distance
 get_distance_NE
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:get_distance_NE(loc: Location_ud)
      -> Vector2f_ud
@@ -1415,7 +1415,7 @@ get_distance_NE
 get_distance_NED
 ----------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:get_distance_NED(loc: Location_ud)
      -> Vector3f_ud
@@ -1429,7 +1429,7 @@ get_distance_NED
 get_vector_from_origin_NEU
 --------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:get_vector_from_origin_NEU()
      -> Vector3f_ud|nil
@@ -1442,7 +1442,7 @@ get_vector_from_origin_NEU
 lat
 ---
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:lat()
      -> integer
@@ -1454,7 +1454,7 @@ lat
 lng
 ---
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:lng()
      -> integer
@@ -1466,7 +1466,7 @@ lng
 loiter_xtrack
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:loiter_xtrack()
      -> boolean
@@ -1478,7 +1478,7 @@ loiter_xtrack
 offset
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:offset(ofs_north: number, ofs_east: number)
 
@@ -1491,7 +1491,7 @@ offset
 offset_bearing
 --------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:offset_bearing(bearing_deg: number, distance: number)
 
@@ -1504,7 +1504,7 @@ offset_bearing
 offset_bearing_and_pitch
 ------------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:offset_bearing_and_pitch(bearing_deg: number, pitch_deg: number, distance: number)
 
@@ -1519,7 +1519,7 @@ offset_bearing_and_pitch
 origin_alt
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:origin_alt()
      -> boolean
@@ -1531,7 +1531,7 @@ origin_alt
 relative_alt
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:relative_alt()
      -> boolean
@@ -1543,7 +1543,7 @@ relative_alt
 terrain_alt
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Location_ud:terrain_alt()
      -> boolean
@@ -1564,7 +1564,7 @@ MotorsMatrix
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -1575,7 +1575,7 @@ MotorsMatrix.add_motor_raw
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) MotorsMatrix:add_motor_raw(motor_num: integer, roll_factor: number, pitch_factor: number, yaw_factor: number, testing_order: integer)
 
@@ -1586,7 +1586,7 @@ MotorsMatrix.get_lost_motor
 
  desc get index (starting at 0) of lost motor
 
-.. code-block:: lua
+.. code-block::
 
    (method) MotorsMatrix:get_lost_motor()
      -> integer
@@ -1598,7 +1598,7 @@ MotorsMatrix.get_thrust_boost
 
  desc return true if we are in thrust boost due to possible lost motor
 
-.. code-block:: lua
+.. code-block::
 
    (method) MotorsMatrix:get_thrust_boost()
      -> boolean
@@ -1610,7 +1610,7 @@ MotorsMatrix.init
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) MotorsMatrix:init(expected_num_motors: integer)
      -> boolean
@@ -1622,7 +1622,7 @@ MotorsMatrix.set_throttle_factor
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) MotorsMatrix:set_throttle_factor(motor_num: integer, throttle_factor: number)
      -> boolean
@@ -1634,7 +1634,7 @@ Motors_6DoF
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -1645,7 +1645,7 @@ Motors_6DoF.add_motor
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) Motors_6DoF:add_motor(motor_num: integer, roll_factor: number, pitch_factor: number, yaw_factor: number, throttle_factor: number, forward_factor: number, right_factor: number, reversible: boolean, testing_order: integer)
 
@@ -1656,7 +1656,7 @@ Motors_6DoF.init
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) Motors_6DoF:init(expected_num_motors: integer)
      -> boolean
@@ -1668,7 +1668,7 @@ Motors_dynamic
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -1679,7 +1679,7 @@ Motors_dynamic.add_motor
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) Motors_dynamic:add_motor(motor_num: integer, testing_order: integer)
 
@@ -1690,7 +1690,7 @@ Motors_dynamic.init
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) Motors_dynamic:init(expected_num_motors: integer)
      -> boolean
@@ -1702,7 +1702,7 @@ Motors_dynamic.load_factors
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) Motors_dynamic:load_factors(factor_table: motor_factor_table_ud)
 
@@ -1711,7 +1711,7 @@ Motors_dynamic.load_factors
 PWMSource
 =========
 
-.. code-block:: lua
+.. code-block::
 
    function PWMSource()
      -> AP_HAL__PWMSource_ud
@@ -1721,59 +1721,67 @@ PWMSource
 Parameter
 =========
 
-.. code-block:: lua
+ Create a new parameter helper, init must be called with a parameter name.
 
-   function Parameter(name?: string)
+.. code-block::
+
+   function Parameter()
      -> Parameter_ud
+
+.. code-block::
+
+   function Parameter(name: string)
+     -> Parameter_ud_const
 
 ----
 
 Parameter_ud
 ============
 
- desc
+ Parameter access helper.
 
 configured
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Parameter_ud:configured()
      -> boolean
 
- desc
+ Return true if the parameter has been configured by the user.
 
 get
 ---
 
-.. code-block:: lua
+.. code-block::
 
    (method) Parameter_ud:get()
      -> number|nil
 
- desc
+ Get the current value of a parameter.
+ Returns nil if the init has not been called and a valid parameter found.
 
 init
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) Parameter_ud:init(name: string)
      -> boolean
 
- desc
+ Init this parameter from a name.
 
 init_by_info
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Parameter_ud:init_by_info(key: integer, group_element: number|uint32_t_ud, type: integer|'1'|'2'|'3'|'4')
      -> boolean
 
- desc
+ Init the paramter from a key. This allows the script to load old parameter that have been removed from the main code.
 
-.. code-block:: lua
+.. code-block::
 
    type:
        | '1' -- AP_PARAM_INT8
@@ -1784,39 +1792,96 @@ init_by_info
 set
 ---
 
-.. code-block:: lua
+.. code-block::
 
    (method) Parameter_ud:set(value: number)
      -> boolean
 
- desc
+ Set the parameter to the given value. The value will not persist a reboot.
 
 set_and_save
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Parameter_ud:set_and_save(value: number)
      -> boolean
 
- desc
+ Set the parameter to the given value and save. The value will be persistant after a reboot.
 
 set_default
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Parameter_ud:set_default(value: number)
      -> boolean
 
- desc
+ Set the defualt value of this parameter, if the parameter has not been configured by the user its value will be updated to the new defualt.
+
+----
+
+Parameter_ud_const
+==================
+
+ Parameter access helper
+
+configured
+----------
+
+.. code-block::
+
+   (method) Parameter_ud_const:configured()
+     -> boolean
+
+ Retrun true if the parameter has been configured by the user.
+
+get
+---
+
+.. code-block::
+
+   (method) Parameter_ud_const:get()
+     -> number
+
+ Get the current value of a parameter.
+
+set
+---
+
+.. code-block::
+
+   (method) Parameter_ud_const:set(value: number)
+     -> boolean
+
+ Set the parameter to the given value. The value will not persist a reboot.
+
+set_and_save
+------------
+
+.. code-block::
+
+   (method) Parameter_ud_const:set_and_save(value: number)
+     -> boolean
+
+ Set the parameter to the given value and save. The value will be persistant after a reboot.
+
+set_default
+-----------
+
+.. code-block::
+
+   (method) Parameter_ud_const:set_default(value: number)
+     -> boolean
+
+ Set the defualt value of this parameter, if the parameter has not been configured by the user its value will be updated to the new defualt.
 
 ----
 
 Quaternion
 ==========
 
-.. code-block:: lua
+.. code-block::
 
    function Quaternion()
      -> Quaternion_ud
@@ -1831,7 +1896,7 @@ Quaternion_ud
 earth_to_body
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:earth_to_body(vec: Vector3f_ud)
 
@@ -1840,7 +1905,7 @@ earth_to_body
 from_angular_velocity
 ---------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:from_angular_velocity(angular_velocity: Vector3f_ud, time_delta: number)
 
@@ -1849,7 +1914,7 @@ from_angular_velocity
 from_axis_angle
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:from_axis_angle(axis: Vector3f_ud, angle: number)
 
@@ -1858,7 +1923,7 @@ from_axis_angle
 from_euler
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:from_euler(roll: number, pitch: number, yaw: number)
 
@@ -1867,7 +1932,7 @@ from_euler
 get_euler_pitch
 ---------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:get_euler_pitch()
      -> number
@@ -1877,7 +1942,7 @@ get_euler_pitch
 get_euler_roll
 --------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:get_euler_roll()
      -> number
@@ -1887,7 +1952,7 @@ get_euler_roll
 get_euler_yaw
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:get_euler_yaw()
      -> number
@@ -1897,7 +1962,7 @@ get_euler_yaw
 inverse
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:inverse()
      -> Quaternion_ud
@@ -1907,7 +1972,7 @@ inverse
 length
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:length()
      -> number
@@ -1917,7 +1982,7 @@ length
 normalize
 ---------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:normalize()
 
@@ -1926,7 +1991,7 @@ normalize
 q1
 --
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:q1()
      -> number
@@ -1936,7 +2001,7 @@ q1
 q2
 --
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:q2()
      -> number
@@ -1946,7 +2011,7 @@ q2
 q3
 --
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:q3()
      -> number
@@ -1956,7 +2021,7 @@ q3
 q4
 --
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:q4()
      -> number
@@ -1966,7 +2031,7 @@ q4
 to_axis_angle
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Quaternion_ud:to_axis_angle(axis_angle: Vector3f_ud)
 
@@ -1982,7 +2047,7 @@ RC_Channel_ud
 get_aux_switch_pos
 ------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RC_Channel_ud:get_aux_switch_pos()
      -> integer
@@ -1992,7 +2057,7 @@ get_aux_switch_pos
 norm_input
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RC_Channel_ud:norm_input()
      -> number
@@ -2002,7 +2067,7 @@ norm_input
 norm_input_dz
 -------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RC_Channel_ud:norm_input_dz()
      -> number
@@ -2012,7 +2077,7 @@ norm_input_dz
 norm_input_ignore_trim
 ----------------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RC_Channel_ud:norm_input_ignore_trim()
      -> number
@@ -2022,7 +2087,7 @@ norm_input_ignore_trim
 set_override
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RC_Channel_ud:set_override(PWM: integer)
 
@@ -2035,7 +2100,7 @@ RPM
 
  RPM handling
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -2050,7 +2115,7 @@ RPM.get_rpm
 
 @\ *return* — RPM value if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) RPM:get_rpm(instance: integer)
      -> number|nil
@@ -2060,7 +2125,7 @@ RPM.get_rpm
 RangeFinder_State
 =================
 
-.. code-block:: lua
+.. code-block::
 
    function RangeFinder_State()
      -> RangeFinder_State_ud
@@ -2075,7 +2140,7 @@ RangeFinder_State_ud
 distance
 --------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RangeFinder_State_ud:distance()
      -> number
@@ -2085,7 +2150,7 @@ distance
 last_reading
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RangeFinder_State_ud:last_reading()
      -> uint32_t_ud
@@ -2095,7 +2160,7 @@ last_reading
 range_valid_count
 -----------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RangeFinder_State_ud:range_valid_count()
      -> integer
@@ -2105,7 +2170,7 @@ range_valid_count
 signal_quality
 --------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RangeFinder_State_ud:signal_quality()
      -> integer
@@ -2115,7 +2180,7 @@ signal_quality
 status
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RangeFinder_State_ud:status()
      -> integer
@@ -2125,7 +2190,7 @@ status
 voltage
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) RangeFinder_State_ud:voltage()
      -> integer
@@ -2139,7 +2204,7 @@ SRV_Channels
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -2154,7 +2219,7 @@ SRV_Channels.find_channel
 
 @\ *return* — output channel number if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:find_channel(function_num: integer)
      -> integer|nil
@@ -2166,13 +2231,13 @@ SRV_Channels.get_emergency_stop
 
  Get emergency stop state if active no motors of any kind will be active
 
-.. code-block:: lua
+.. code-block::
 
    return #1:
        | true -- E-Stop active
        | false -- E-Stop inactive
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:get_emergency_stop()
      -> boolean
@@ -2188,7 +2253,7 @@ SRV_Channels.get_output_pwm
 
 @\ *return* — output pwm if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:get_output_pwm(function_num: integer)
      -> integer|nil
@@ -2204,7 +2269,7 @@ SRV_Channels.get_output_scaled
 
 @\ *return* — scaled value
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:get_output_scaled(function_num: integer)
      -> number
@@ -2216,13 +2281,13 @@ SRV_Channels.get_safety_state
 
  Get safety state
 
-.. code-block:: lua
+.. code-block::
 
    return #1:
        | true -- Disarmed outputs inactive
        | false -- Armed outputs live
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:get_safety_state()
      -> boolean
@@ -2236,7 +2301,7 @@ SRV_Channels.set_angle
 
 @\ *param* ``function_num`` — servo function (See SERVOx_FUNCTION parameters)
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:set_angle(function_num: integer, angle: integer)
 
@@ -2249,7 +2314,7 @@ SRV_Channels.set_output_norm
 
 @\ *param* ``function_num`` — servo function (See SERVOx_FUNCTION parameters)
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:set_output_norm(function_num: integer, value: number)
 
@@ -2264,7 +2329,7 @@ SRV_Channels.set_output_pwm
 
 @\ *param* ``pwm`` — pwm value
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:set_output_pwm(function_num: integer, pwm: integer)
 
@@ -2279,7 +2344,7 @@ SRV_Channels.set_output_pwm_chan
 
 @\ *param* ``pwm`` — pwm value
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:set_output_pwm_chan(chan: integer, pwm: integer)
 
@@ -2296,7 +2361,7 @@ SRV_Channels.set_output_pwm_chan_timeout
 
 @\ *param* ``timeout_ms`` — duration of the override
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:set_output_pwm_chan_timeout(chan: integer, pwm: integer, timeout_ms: integer)
 
@@ -2311,7 +2376,7 @@ SRV_Channels.set_output_scaled
 
 @\ *param* ``value`` — scaled value
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:set_output_scaled(function_num: integer, value: number)
 
@@ -2324,7 +2389,7 @@ SRV_Channels.set_range
 
 @\ *param* ``function_num`` — servo function (See SERVOx_FUNCTION parameters)
 
-.. code-block:: lua
+.. code-block::
 
    (method) SRV_Channels:set_range(function_num: integer, range: integer)
 
@@ -2338,7 +2403,7 @@ ScriptingCANBuffer_ud
 add_filter
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) ScriptingCANBuffer_ud:add_filter(mask: number|uint32_t_ud, value: number|uint32_t_ud)
      -> boolean
@@ -2352,7 +2417,7 @@ add_filter
 read_frame
 ----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) ScriptingCANBuffer_ud:read_frame()
      -> CANFrame_ud|nil
@@ -2362,7 +2427,7 @@ read_frame
 write_frame
 -----------
 
-.. code-block:: lua
+.. code-block::
 
    (method) ScriptingCANBuffer_ud:write_frame(frame: CANFrame_ud, timeout_us: number|uint32_t_ud)
      -> boolean
@@ -2376,7 +2441,7 @@ Socket
 
  Get a new socket
 
-.. code-block:: lua
+.. code-block::
 
    function Socket(datagram: boolean)
      -> SocketAPM_ud
@@ -2391,7 +2456,7 @@ SocketAPM_ud
 accept
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:accept()
      -> SocketAPM_ud|nil
@@ -2407,7 +2472,7 @@ accept new incoming sockets, returning a new socket.
 bind
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:bind(IP_address: string, port: integer)
      -> boolean
@@ -2417,7 +2482,7 @@ bind
 close
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:close()
 
@@ -2430,7 +2495,7 @@ close a socket. Note that there is no automatic garbage
 connect
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:connect(IP_address: string, port: integer)
      -> boolean
@@ -2440,7 +2505,7 @@ connect
 is_connected
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:is_connected()
      -> boolean
@@ -2450,7 +2515,7 @@ is_connected
 listen
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:listen(backlog: integer)
      -> boolean
@@ -2460,7 +2525,7 @@ listen
 pollin
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:pollin(timeout_ms: number|uint32_t_ud)
      -> boolean
@@ -2470,7 +2535,7 @@ pollin
 pollout
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:pollout(timeout_ms: number|uint32_t_ud)
      -> boolean
@@ -2480,7 +2545,7 @@ pollout
 recv
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:recv(length: integer)
      -> string|nil
@@ -2490,7 +2555,7 @@ recv
 reuseaddress
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:reuseaddress()
      -> boolean
@@ -2500,7 +2565,7 @@ reuseaddress
 send
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:send(str: string, len: number|uint32_t_ud)
      -> integer
@@ -2510,7 +2575,7 @@ send
 sendfile
 --------
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:sendfile(filehandle: string)
      -> boolean
@@ -2526,7 +2591,7 @@ setup to send all remaining data from a filehandle to the socket
 set_blocking
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) SocketAPM_ud:set_blocking(blocking: boolean)
      -> boolean
@@ -2540,7 +2605,7 @@ Vector2f
 
  Create Vector2f object
 
-.. code-block:: lua
+.. code-block::
 
    function Vector2f()
      -> Vector2f_ud
@@ -2556,7 +2621,7 @@ Vector2f_ud
 angle
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector2f_ud:angle()
      -> number
@@ -2569,7 +2634,7 @@ angle
 copy
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector2f_ud:copy()
      -> Vector2f_ud
@@ -2581,7 +2646,7 @@ copy
 is_inf
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector2f_ud:is_inf()
      -> boolean
@@ -2593,7 +2658,7 @@ is_inf
 is_nan
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector2f_ud:is_nan()
      -> boolean
@@ -2605,7 +2670,7 @@ is_nan
 is_zero
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector2f_ud:is_zero()
      -> boolean
@@ -2617,7 +2682,7 @@ is_zero
 length
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector2f_ud:length()
      -> number
@@ -2629,7 +2694,7 @@ length
 normalize
 ---------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector2f_ud:normalize()
 
@@ -2638,7 +2703,7 @@ normalize
 rotate
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector2f_ud:rotate(angle_rad: number)
 
@@ -2649,7 +2714,7 @@ rotate
 x
 -
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector2f_ud:x()
      -> number
@@ -2659,7 +2724,7 @@ x
 y
 -
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector2f_ud:y()
      -> number
@@ -2673,7 +2738,7 @@ Vector3f
 
  Create Vector3f object
 
-.. code-block:: lua
+.. code-block::
 
    function Vector3f()
      -> Vector3f_ud
@@ -2690,7 +2755,7 @@ Vector3f_ud
 angle
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:angle(v2: Vector3f_ud)
      -> number
@@ -2700,7 +2765,7 @@ angle
 copy
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:copy()
      -> Vector3f_ud
@@ -2712,7 +2777,7 @@ copy
 cross
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:cross(vector: Vector3f_ud)
      -> Vector3f_ud
@@ -2724,7 +2789,7 @@ cross
 dot
 ---
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:dot(vector: Vector3f_ud)
      -> number
@@ -2736,7 +2801,7 @@ dot
 is_inf
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:is_inf()
      -> boolean
@@ -2748,7 +2813,7 @@ is_inf
 is_nan
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:is_nan()
      -> boolean
@@ -2760,7 +2825,7 @@ is_nan
 is_zero
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:is_zero()
      -> boolean
@@ -2772,7 +2837,7 @@ is_zero
 length
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:length()
      -> number
@@ -2784,7 +2849,7 @@ length
 normalize
 ---------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:normalize()
 
@@ -2793,7 +2858,7 @@ normalize
 rotate_xy
 ---------
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:rotate_xy(param1: number)
 
@@ -2804,7 +2869,7 @@ rotate_xy
 scale
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:scale(scale_factor: number)
      -> Vector3f_ud
@@ -2816,7 +2881,7 @@ scale
 x
 -
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:x()
      -> number
@@ -2826,7 +2891,7 @@ x
 xy
 --
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:xy()
      -> Vector2f_ud
@@ -2836,7 +2901,7 @@ xy
 y
 -
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:y()
      -> number
@@ -2846,7 +2911,7 @@ y
 z
 -
 
-.. code-block:: lua
+.. code-block::
 
    (method) Vector3f_ud:z()
      -> number
@@ -2861,7 +2926,7 @@ ahrs
  The ahrs library represents the Attitude Heading Reference System computed by the autopilot. 
  It provides estimates for the vehicles attitude, and position.
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -2874,7 +2939,7 @@ ahrs.airspeed_estimate
 
 @\ *return* — airspeed in meters / second if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:airspeed_estimate()
      -> number|nil
@@ -2886,7 +2951,7 @@ ahrs.body_to_earth
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:body_to_earth(vector: Vector3f_ud)
      -> Vector3f_ud
@@ -2898,7 +2963,7 @@ ahrs.earth_to_body
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:earth_to_body(vector: Vector3f_ud)
      -> Vector3f_ud
@@ -2910,7 +2975,7 @@ ahrs.get_EAS2TAS
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_EAS2TAS()
      -> number
@@ -2922,7 +2987,7 @@ ahrs.get_accel
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_accel()
      -> Vector3f_ud
@@ -2936,7 +3001,7 @@ ahrs.get_gyro
 
 @\ *return* — roll, pitch, yaw gyro rates in radians / second
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_gyro()
      -> Vector3f_ud
@@ -2950,7 +3015,7 @@ ahrs.get_hagl
 
 @\ *return* — height above ground level in meters
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_hagl()
      -> number|nil
@@ -2964,7 +3029,7 @@ ahrs.get_home
 
 @\ *return* — home location
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_home()
      -> Location_ud
@@ -2979,7 +3044,7 @@ ahrs.get_location
 
 @\ *return* — current location if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_location()
      -> Location_ud|nil
@@ -2991,7 +3056,7 @@ ahrs.get_origin
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_origin()
      -> Location_ud|nil
@@ -3005,7 +3070,7 @@ ahrs.get_pitch
 
 @\ *return* — pitch angle in radians.
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_pitch()
      -> number
@@ -3017,7 +3082,7 @@ ahrs.get_position
 
  same as ``get_location`` will be removed
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_position()
      -> Location_ud|nil
@@ -3029,7 +3094,7 @@ ahrs.get_posvelyaw_source_set
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_posvelyaw_source_set()
      -> integer
@@ -3041,7 +3106,7 @@ ahrs.get_quaternion
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_quaternion()
      -> Quaternion_ud|nil
@@ -3053,7 +3118,7 @@ ahrs.get_relative_position_D_home
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_relative_position_D_home()
      -> number
@@ -3065,7 +3130,7 @@ ahrs.get_relative_position_NED_home
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_relative_position_NED_home()
      -> Vector3f_ud|nil
@@ -3077,7 +3142,7 @@ ahrs.get_relative_position_NED_origin
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_relative_position_NED_origin()
      -> Vector3f_ud|nil
@@ -3091,7 +3156,7 @@ ahrs.get_roll
 
 @\ *return* — roll angle in radians
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_roll()
      -> number
@@ -3103,7 +3168,7 @@ ahrs.get_variances
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_variances()
      -> number|nil
@@ -3119,7 +3184,7 @@ ahrs.get_vel_innovations_and_variances_for_source
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_vel_innovations_and_variances_for_source(source: integer)
      -> Vector3f_ud|nil
@@ -3134,7 +3199,7 @@ ahrs.get_velocity_NED
 
 @\ *return* — North, east, down velcoity in meters / second if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_velocity_NED()
      -> Vector3f_ud|nil
@@ -3146,7 +3211,7 @@ ahrs.get_vibration
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_vibration()
      -> Vector3f_ud
@@ -3160,7 +3225,7 @@ ahrs.get_yaw
 
 @\ *return* — yaw angle in radians.
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:get_yaw()
      -> number
@@ -3174,7 +3239,7 @@ ahrs.groundspeed_vector
 
 @\ *return* — ground speed vector, North East, meters / second
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:groundspeed_vector()
      -> Vector2f_ud
@@ -3186,7 +3251,7 @@ ahrs.head_wind
 
  Forward head-wind component in m/s. Negative means tail-wind
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:head_wind()
      -> number
@@ -3198,7 +3263,7 @@ ahrs.healthy
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:healthy()
      -> boolean
@@ -3212,7 +3277,7 @@ ahrs.home_is_set
 
 @\ *return* — true if home position has been set
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:home_is_set()
      -> boolean
@@ -3224,7 +3289,7 @@ ahrs.initialised
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:initialised()
      -> boolean
@@ -3236,7 +3301,7 @@ ahrs.set_home
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:set_home(loc: Location_ud)
      -> boolean
@@ -3248,7 +3313,7 @@ ahrs.set_origin
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:set_origin(loc: Location_ud)
      -> boolean
@@ -3260,7 +3325,7 @@ ahrs.set_posvelyaw_source_set
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:set_posvelyaw_source_set(source_set_idx: integer)
 
@@ -3274,7 +3339,7 @@ ahrs.wind_alignment
  aligned with-wind, and zero when perfect cross-wind. There is no
  distinction between a left or right cross-wind. Wind speed is ignored
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:wind_alignment(heading_deg: number)
      -> number
@@ -3288,7 +3353,7 @@ ahrs.wind_estimate
 
 @\ *return* — wind estiamte North, East, Down meters / second
 
-.. code-block:: lua
+.. code-block::
 
    (method) ahrs:wind_estimate()
      -> Vector3f_ud
@@ -3300,7 +3365,7 @@ analog
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -3311,7 +3376,7 @@ analog.channel
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) analog:channel()
      -> AP_HAL__AnalogSource_ud|nil
@@ -3323,7 +3388,7 @@ arming
 
  The Arming library provides access to arming status and commands.
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -3336,7 +3401,7 @@ arming.arm
 
 @\ *return* — true if armed successfully
 
-.. code-block:: lua
+.. code-block::
 
    (method) arming:arm()
      -> boolean
@@ -3350,7 +3415,7 @@ arming.disarm
 
 @\ *return* — true if disarmed successfully, false if already disarmed.
 
-.. code-block:: lua
+.. code-block::
 
    (method) arming:disarm()
      -> boolean
@@ -3362,7 +3427,7 @@ arming.get_aux_auth_id
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) arming:get_aux_auth_id()
      -> integer|nil
@@ -3376,7 +3441,7 @@ arming.is_armed
 
 @\ *return* — true if armed
 
-.. code-block:: lua
+.. code-block::
 
    (method) arming:is_armed()
      -> boolean
@@ -3388,7 +3453,7 @@ arming.pre_arm_checks
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) arming:pre_arm_checks()
      -> boolean
@@ -3400,7 +3465,7 @@ arming.set_aux_auth_failed
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) arming:set_aux_auth_failed(auth_id: integer, fail_msg: string)
 
@@ -3411,7 +3476,7 @@ arming.set_aux_auth_passed
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) arming:set_aux_auth_passed(auth_id: integer)
 
@@ -3422,7 +3487,7 @@ attitude_control
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -3433,7 +3498,7 @@ attitude_control.set_forward_enable
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) attitude_control:set_forward_enable(bool: boolean)
 
@@ -3444,7 +3509,7 @@ attitude_control.set_lateral_enable
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) attitude_control:set_lateral_enable(bool: boolean)
 
@@ -3455,7 +3520,7 @@ attitude_control.set_offset_roll_pitch
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) attitude_control:set_offset_roll_pitch(roll_deg: number, pitch_deg: number)
 
@@ -3466,7 +3531,7 @@ baro
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -3478,7 +3543,7 @@ baro.get_altitude
  get current altitude in meters relative to altitude at the time
  of the last calibrate() call, typically at boot
 
-.. code-block:: lua
+.. code-block::
 
    (method) baro:get_altitude()
      -> number
@@ -3492,7 +3557,7 @@ baro.get_external_temperature
 
 @\ *return* — temperature in degrees C
 
-.. code-block:: lua
+.. code-block::
 
    (method) baro:get_external_temperature()
      -> number
@@ -3506,7 +3571,7 @@ baro.get_pressure
 
 @\ *return* — pressure in Pascal
 
-.. code-block:: lua
+.. code-block::
 
    (method) baro:get_pressure()
      -> number
@@ -3520,7 +3585,7 @@ baro.get_temperature
 
 @\ *return* — temperature in degrees C
 
-.. code-block:: lua
+.. code-block::
 
    (method) baro:get_temperature()
      -> number
@@ -3534,7 +3599,7 @@ baro.healthy
 
 @\ *param* ``instance`` — the 0-based index of the BARO instance to return.
 
-.. code-block:: lua
+.. code-block::
 
    (method) baro:healthy(instance: integer)
      -> boolean
@@ -3546,7 +3611,7 @@ battery
 
  The battery library provides access to information about the currently connected batteries on the vehicle.
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -3561,7 +3626,7 @@ battery.capacity_remaining_pct
 
 @\ *return* — remaining capacity as a percentage of total capacity if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:capacity_remaining_pct(instance: integer)
      -> integer|nil
@@ -3577,7 +3642,7 @@ battery.consumed_mah
 
 @\ *return* — consumed capacity in milliamp hours
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:consumed_mah(instance: integer)
      -> number|nil
@@ -3593,7 +3658,7 @@ battery.consumed_wh
 
 @\ *return* — consumed energy in watt hours if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:consumed_wh(instance: integer)
      -> number|nil
@@ -3609,7 +3674,7 @@ battery.current_amps
 
 @\ *return* — current in amps if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:current_amps(instance: integer)
      -> number|nil
@@ -3621,7 +3686,7 @@ battery.get_cell_voltage
 
  get individual cell voltage
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:get_cell_voltage(instance: integer, cell: integer)
      -> number|nil
@@ -3637,7 +3702,7 @@ battery.get_cycle_count
 
 @\ *return* — cycle count if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:get_cycle_count(instance: integer)
      -> integer|nil
@@ -3653,7 +3718,7 @@ battery.get_temperature
 
 @\ *return* — temperature if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:get_temperature(instance: integer)
      -> number|nil
@@ -3665,7 +3730,7 @@ battery.handle_scripting
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:handle_scripting(idx: integer, state: BattMonitorScript_State_ud)
      -> boolean
@@ -3679,7 +3744,7 @@ battery.has_failsafed
 
 @\ *return* — true if any battery has failsafed
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:has_failsafed()
      -> boolean
@@ -3693,7 +3758,7 @@ battery.healthy
 
 @\ *param* ``instance`` — battery instance
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:healthy(instance: integer)
      -> boolean
@@ -3707,7 +3772,7 @@ battery.num_instances
 
 @\ *return* — number of instances
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:num_instances()
      -> integer
@@ -3723,7 +3788,7 @@ battery.overpower_detected
 
 @\ *return* — true if in overpower condition
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:overpower_detected(instance: integer)
      -> boolean
@@ -3739,7 +3804,7 @@ battery.pack_capacity_mah
 
 @\ *return* — capacity in milliamp hours
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:pack_capacity_mah(instance: integer)
      -> integer
@@ -3753,7 +3818,7 @@ battery.reset_remaining
 
 @\ *param* ``instance`` — battery instance
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:reset_remaining(instance: integer, percentage: number)
      -> boolean
@@ -3769,7 +3834,7 @@ battery.voltage
 
 @\ *return* — voltage
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:voltage(instance: integer)
      -> number
@@ -3785,7 +3850,7 @@ battery.voltage_resting_estimate
 
 @\ *return* — resting voltage
 
-.. code-block:: lua
+.. code-block::
 
    (method) battery:voltage_resting_estimate(instance: integer)
      -> number
@@ -3797,7 +3862,7 @@ button
 
  button handling
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -3810,7 +3875,7 @@ button.get_button_state
 
 @\ *param* ``button_number`` — button number 1 indexed.
 
-.. code-block:: lua
+.. code-block::
 
    (method) button:get_button_state(button_number: integer)
      -> boolean
@@ -3822,7 +3887,7 @@ camera
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -3833,7 +3898,7 @@ camera.get_state
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) camera:get_state(instance: integer)
      -> AP_Camera__camera_state_t_ud|nil
@@ -3845,7 +3910,7 @@ camera.record_video
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) camera:record_video(instance: integer, start_recording: boolean)
      -> boolean
@@ -3857,7 +3922,7 @@ camera.set_trigger_distance
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) camera:set_trigger_distance(instance: integer, distance_m: number)
 
@@ -3868,7 +3933,7 @@ camera.take_picture
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) camera:take_picture(instance: integer)
 
@@ -3879,7 +3944,7 @@ compass
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -3892,7 +3957,7 @@ compass.healthy
 
 @\ *param* ``instance`` — the 0-based index of the compass instance to return.
 
-.. code-block:: lua
+.. code-block::
 
    (method) compass:healthy(instance: integer)
      -> boolean
@@ -3908,7 +3973,7 @@ dirlist
 
 @\ *return* — error string if fails
 
-.. code-block:: lua
+.. code-block::
 
    function dirlist(directoryname: string)
      -> table|nil
@@ -3921,7 +3986,7 @@ efi
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -3932,7 +3997,7 @@ efi.get_backend
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) efi:get_backend(instance: integer)
      -> AP_EFI_Backend_ud|nil
@@ -3944,7 +4009,7 @@ efi.get_state
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) efi:get_state()
      -> EFI_State_ud
@@ -3956,7 +4021,7 @@ esc_telem
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -3969,7 +4034,7 @@ esc_telem.get_consumption_mah
 
 @\ *param* ``instance`` — esc instance 0 indexed
 
-.. code-block:: lua
+.. code-block::
 
    (method) esc_telem:get_consumption_mah(instance: integer)
      -> number|nil
@@ -3983,7 +4048,7 @@ esc_telem.get_current
 
 @\ *param* ``instance`` — esc instance 0 indexed
 
-.. code-block:: lua
+.. code-block::
 
    (method) esc_telem:get_current(instance: integer)
      -> number|nil
@@ -3997,7 +4062,7 @@ esc_telem.get_motor_temperature
 
 @\ *param* ``instance`` — esc instance 0 indexed
 
-.. code-block:: lua
+.. code-block::
 
    (method) esc_telem:get_motor_temperature(instance: integer)
      -> integer|nil
@@ -4011,7 +4076,7 @@ esc_telem.get_rpm
 
 @\ *param* ``instance`` — esc instance 0 indexed
 
-.. code-block:: lua
+.. code-block::
 
    (method) esc_telem:get_rpm(instance: integer)
      -> number|nil
@@ -4025,7 +4090,7 @@ esc_telem.get_temperature
 
 @\ *param* ``instance`` — esc instance 0 indexed
 
-.. code-block:: lua
+.. code-block::
 
    (method) esc_telem:get_temperature(instance: integer)
      -> integer|nil
@@ -4041,7 +4106,7 @@ esc_telem.get_usage_seconds
 
 @\ *return* — usage time in seconds, nill if not available.
 
-.. code-block:: lua
+.. code-block::
 
    (method) esc_telem:get_usage_seconds(instance: integer)
      -> uint32_t_ud|nil
@@ -4055,7 +4120,7 @@ esc_telem.get_voltage
 
 @\ *param* ``instance`` — esc instance 0 indexed
 
-.. code-block:: lua
+.. code-block::
 
    (method) esc_telem:get_voltage(instance: integer)
      -> number|nil
@@ -4071,7 +4136,7 @@ esc_telem.set_rpm_scale
 
 @\ *param* ``scale_factor`` — factor
 
-.. code-block:: lua
+.. code-block::
 
    (method) esc_telem:set_rpm_scale(esc_index: integer, scale_factor: number)
 
@@ -4088,7 +4153,7 @@ esc_telem.update_rpm
 
 @\ *param* ``error_rate`` — error rate
 
-.. code-block:: lua
+.. code-block::
 
    (method) esc_telem:update_rpm(esc_index: integer, rpm: integer, error_rate: number)
 
@@ -4103,7 +4168,7 @@ esc_telem.update_telem_data
 
 @\ *param* ``data_mask`` — bit mask of what fields are filled in
 
-.. code-block:: lua
+.. code-block::
 
    (method) esc_telem:update_telem_data(instance: integer, telemdata: ESCTelemetryData_ud, data_mask: integer)
 
@@ -4114,7 +4179,7 @@ fence
 
  Geofence library
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -4127,7 +4192,7 @@ fence.get_breach_time
 
 @\ *return* ``system_time`` — milliseconds
 
-.. code-block:: lua
+.. code-block::
 
    (method) fence:get_breach_time()
      -> system_time: uint32_t_ud
@@ -4139,7 +4204,7 @@ fence.get_breaches
 
  Returns the type bitmask of any breached fences
 
-.. code-block:: lua
+.. code-block::
 
    return #1:
        | 1 -- Maximim altitude
@@ -4147,7 +4212,7 @@ fence.get_breaches
        | 4 -- Polygon
        | 8 -- Minimum altitude
 
-.. code-block:: lua
+.. code-block::
 
    (method) fence:get_breaches()
      -> integer|1|2|4|8
@@ -4159,7 +4224,7 @@ follow
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -4170,7 +4235,7 @@ follow.get_last_update_ms
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) follow:get_last_update_ms()
      -> uint32_t_ud
@@ -4182,7 +4247,7 @@ follow.get_target_heading_deg
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) follow:get_target_heading_deg()
      -> number|nil
@@ -4194,7 +4259,7 @@ follow.get_target_location_and_velocity
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) follow:get_target_location_and_velocity()
      -> Location_ud|nil
@@ -4207,7 +4272,7 @@ follow.get_target_location_and_velocity_ofs
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) follow:get_target_location_and_velocity_ofs()
      -> Location_ud|nil
@@ -4220,7 +4285,7 @@ follow.have_target
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) follow:have_target()
      -> boolean
@@ -4232,7 +4297,7 @@ frsky_sport
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -4243,7 +4308,7 @@ frsky_sport.prep_number
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) frsky_sport:prep_number(number: integer, digits: integer, power: integer)
      -> integer
@@ -4255,7 +4320,7 @@ frsky_sport.sport_telemetry_push
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) frsky_sport:sport_telemetry_push(sensor: integer, frame: integer, appid: integer, data: integer)
      -> boolean
@@ -4267,7 +4332,7 @@ fs
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -4278,7 +4343,7 @@ fs.crc32
 
  Get crc32 checksum of a file with given name
 
-.. code-block:: lua
+.. code-block::
 
    (method) fs:crc32(file_name: string)
      -> uint32_t_ud|nil
@@ -4290,7 +4355,7 @@ fs.format
 
  Format the SD card. This is a async operation, use get_format_status to get the status of the format
 
-.. code-block:: lua
+.. code-block::
 
    (method) fs:format()
      -> boolean
@@ -4302,7 +4367,7 @@ fs.get_format_status
 
  Get the current status of a format. 0=NOT_STARTED, 1=PENDING, 2=IN_PROGRESS, 3=SUCCESS, 4=FAILURE
 
-.. code-block:: lua
+.. code-block::
 
    (method) fs:get_format_status()
      -> integer
@@ -4314,7 +4379,7 @@ fs.stat
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) fs:stat(param1: string)
      -> stat_t_ud|nil
@@ -4326,7 +4391,7 @@ gcs
 
  MAVLink interaction with ground control station
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -4339,7 +4404,7 @@ gcs.enable_high_latency_connections
 
 @\ *param* ``enabled`` — true to enable or false to disable
 
-.. code-block:: lua
+.. code-block::
 
    (method) gcs:enable_high_latency_connections(enabled: boolean)
 
@@ -4350,7 +4415,7 @@ gcs.frame_type
 
  get the vehicle MAV_TYPE
 
-.. code-block:: lua
+.. code-block::
 
    return #1:
        | '0' -- MAV_TYPE_GENERIC=0, /* Generic micro air vehicle | */
@@ -4398,7 +4463,7 @@ gcs.frame_type
        | '42' -- MAV_TYPE_WINCH=42, /* Winch | */
        | '43' -- MAV_TYPE_ENUM_END=43, /*  | */
 
-.. code-block:: lua
+.. code-block::
 
    (method) gcs:frame_type()
      -> integer|'0'|'1'|'10'|'11'...(+40)
@@ -4410,7 +4475,7 @@ gcs.get_high_latency_status
 
  get the the current state of high latency control
 
-.. code-block:: lua
+.. code-block::
 
    (method) gcs:get_high_latency_status()
      -> boolean
@@ -4422,7 +4487,7 @@ gcs.get_hud_throttle
 
  get the throttle value in %
 
-.. code-block:: lua
+.. code-block::
 
    (method) gcs:get_hud_throttle()
      -> integer
@@ -4436,7 +4501,7 @@ gcs.last_seen
 
 @\ *return* — system time in milliseconds
 
-.. code-block:: lua
+.. code-block::
 
    (method) gcs:last_seen()
      -> uint32_t_ud
@@ -4452,7 +4517,7 @@ gcs.send_named_float
 
 @\ *param* ``value`` — value to send
 
-.. code-block:: lua
+.. code-block::
 
    (method) gcs:send_named_float(name: string, value: number)
 
@@ -4463,7 +4528,7 @@ gcs.send_text
 
  send text with severity level
 
-.. code-block:: lua
+.. code-block::
 
    severity:
        | '0' -- Emergency: System is unusable. This is a "panic" condition.
@@ -4475,7 +4540,7 @@ gcs.send_text
        | '6' -- Info: Normal operational messages. Useful for logging. No action is required for these messages.
        | '7' -- Debug: Useful non-operational messages that can assist in debugging. These should not occur during normal operation.
 
-.. code-block:: lua
+.. code-block::
 
    (method) gcs:send_text(severity: integer|'0'|'1'|'2'|'3'...(+4), text: string)
 
@@ -4492,13 +4557,13 @@ gcs.set_message_interval
 
 @\ *param* ``interval_us`` — interval in micro seconds
 
-.. code-block:: lua
+.. code-block::
 
    return #1:
        | '0' -- Accepted
        | '4' -- Failed
 
-.. code-block:: lua
+.. code-block::
 
    (method) gcs:set_message_interval(port_num: integer, msg_id: number|uint32_t_ud, interval_us: integer)
      -> integer|'0'|'4'
@@ -4510,7 +4575,7 @@ gpio
 
  Control of general purpose input/output pins
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -4521,13 +4586,13 @@ gpio.pinMode
 
  set GPIO pin mode
 
-.. code-block:: lua
+.. code-block::
 
    mode:
        | '0' -- input
        | '1' -- output
 
-.. code-block:: lua
+.. code-block::
 
    (method) gpio:pinMode(pin_number: integer, mode: integer|'0'|'1')
 
@@ -4540,7 +4605,7 @@ gpio.read
 
 @\ *return* — pin state
 
-.. code-block:: lua
+.. code-block::
 
    (method) gpio:read(pin_number: integer)
      -> boolean
@@ -4552,7 +4617,7 @@ gpio.toggle
 
  toggle GPIO output
 
-.. code-block:: lua
+.. code-block::
 
    (method) gpio:toggle(pin_number: integer)
 
@@ -4563,13 +4628,13 @@ gpio.write
 
  write GPIO output
 
-.. code-block:: lua
+.. code-block::
 
    value:
        | '0' -- low
        | '1' -- high
 
-.. code-block:: lua
+.. code-block::
 
    (method) gpio:write(pin_number: integer, value: integer|'0'|'1')
 
@@ -4580,7 +4645,7 @@ gps
 
  The GPS library provides access to information about the GPS’s on the vehicle.
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -4589,7 +4654,7 @@ gps
 gps.GPS_OK_FIX_2D
 =================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -4598,7 +4663,7 @@ gps.GPS_OK_FIX_2D
 gps.GPS_OK_FIX_3D
 =================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -4607,7 +4672,7 @@ gps.GPS_OK_FIX_3D
 gps.GPS_OK_FIX_3D_DGPS
 ======================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -4616,7 +4681,7 @@ gps.GPS_OK_FIX_3D_DGPS
 gps.GPS_OK_FIX_3D_RTK_FIXED
 ===========================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -4625,7 +4690,7 @@ gps.GPS_OK_FIX_3D_RTK_FIXED
 gps.GPS_OK_FIX_3D_RTK_FLOAT
 ===========================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -4634,7 +4699,7 @@ gps.GPS_OK_FIX_3D_RTK_FLOAT
 gps.NO_FIX
 ==========
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -4643,7 +4708,7 @@ gps.NO_FIX
 gps.NO_GPS
 ==========
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -4654,7 +4719,7 @@ gps.first_unconfigured_gps
 
   Returns nil or the instance number of the first GPS that has not been fully configured. If all GPS’s have been configured this returns nil.
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:first_unconfigured_gps()
      -> integer|nil
@@ -4670,7 +4735,7 @@ gps.get_antenna_offset
 
 @\ *return* — anteena offset vector forward, right, down in meters
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:get_antenna_offset(instance: integer)
      -> Vector3f_ud
@@ -4686,7 +4751,7 @@ gps.get_hdop
 
 @\ *return* — hdop
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:get_hdop(instance: integer)
      -> integer
@@ -4702,10 +4767,32 @@ gps.get_vdop
 
 @\ *return* — vdop
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:get_vdop(instance: integer)
      -> integer
+
+----
+
+gps.gps_yaw_deg
+===============
+
+ get yaw from GPS in degrees
+
+@\ *param* ``instance`` — instance number
+
+@\ *return* — yaw in degrees
+
+@\ *return* — yaw accuracy in degrees
+
+@\ *return* — time in milliseconds of last yaw reading
+
+.. code-block::
+
+   (method) gps:gps_yaw_deg(instance: integer)
+     -> number|nil
+     2. number|nil
+     3. uint32_t_ud|nil
 
 ----
 
@@ -4718,7 +4805,7 @@ gps.ground_course
 
 @\ *return* — ground course in degrees
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:ground_course(instance: integer)
      -> number
@@ -4734,7 +4821,7 @@ gps.ground_speed
 
 @\ *return* — ground speed m/s
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:ground_speed(instance: integer)
      -> number
@@ -4750,7 +4837,7 @@ gps.have_vertical_velocity
 
 @\ *return* — true if vertical velocity is available
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:have_vertical_velocity(instance: integer)
      -> boolean
@@ -4766,7 +4853,7 @@ gps.horizontal_accuracy
 
 @\ *return* — accuracy in meters
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:horizontal_accuracy(instance: integer)
      -> number|nil
@@ -4782,7 +4869,7 @@ gps.last_fix_time_ms
 
 @\ *return* — system time of last fix in milliseconds
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:last_fix_time_ms(instance: integer)
      -> uint32_t_ud
@@ -4796,7 +4883,7 @@ gps.last_message_time_ms
 
 @\ *param* ``instance`` — instance number
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:last_message_time_ms(instance: integer)
      -> uint32_t_ud
@@ -4812,7 +4899,7 @@ gps.location
 
 @\ *return* — gps location
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:location(instance: integer)
      -> Location_ud
@@ -4828,7 +4915,7 @@ gps.num_sats
 
 @\ *return* — number of satellites
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:num_sats(instance: integer)
      -> integer
@@ -4843,7 +4930,7 @@ gps.num_sensors
 
 @\ *return* — number of sensors
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:num_sensors()
      -> integer
@@ -4857,7 +4944,7 @@ gps.primary_sensor
 
 @\ *return* — primary sensor instance
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:primary_sensor()
      -> integer
@@ -4873,7 +4960,7 @@ gps.speed_accuracy
 
 @\ *return* — 3D velocity RMS accuracy estimate in m/s if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:speed_accuracy(instance: integer)
      -> number|nil
@@ -4890,7 +4977,7 @@ gps.status
 
 @\ *return* — status
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:status(instance: integer)
      -> integer
@@ -4906,7 +4993,7 @@ gps.time_week
 
 @\ *return* — week number
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:time_week(instance: integer)
      -> integer
@@ -4922,7 +5009,7 @@ gps.time_week_ms
 
 @\ *return* — milliseconds of current week
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:time_week_ms(instance: integer)
      -> uint32_t_ud
@@ -4939,7 +5026,7 @@ gps.velocity
 
 @\ *return* — 3D velocity in m/s, in NED format
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:velocity(instance: integer)
      -> Vector3f_ud
@@ -4953,7 +5040,7 @@ gps.vertical_accuracy
 
 @\ *param* ``instance`` — instance number
 
-.. code-block:: lua
+.. code-block::
 
    (method) gps:vertical_accuracy(instance: integer)
      -> number|nil
@@ -4965,7 +5052,7 @@ i2c
 
  i2c bus interaction
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -4984,7 +5071,7 @@ i2c.get_device
 
 @\ *param* ``smbus`` — optional sumbus flag, default false
 
-.. code-block:: lua
+.. code-block::
 
    (method) i2c:get_device(bus: integer, address: integer, clock?: number|uint32_t_ud, smbus?: boolean)
      -> AP_HAL__I2CDevice_ud|nil
@@ -4996,7 +5083,7 @@ ins
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -5009,7 +5096,7 @@ ins.accels_consistent
 
 @\ *param* ``threshold`` — the threshold allowed before returning false
 
-.. code-block:: lua
+.. code-block::
 
    (method) ins:accels_consistent(threshold: number)
      -> boolean
@@ -5021,7 +5108,7 @@ ins.calibrating
 
  Get if the INS is currently calibrating
 
-.. code-block:: lua
+.. code-block::
 
    (method) ins:calibrating()
      -> boolean
@@ -5035,7 +5122,7 @@ ins.get_accel
 
 @\ *param* ``instance`` — the 0-based index of the accelerometer instance to return.
 
-.. code-block:: lua
+.. code-block::
 
    (method) ins:get_accel(instance: integer)
      -> Vector3f_ud
@@ -5049,7 +5136,7 @@ ins.get_accel_health
 
 @\ *param* ``instance`` — the 0-based index of the accelerometer instance to return.
 
-.. code-block:: lua
+.. code-block::
 
    (method) ins:get_accel_health(instance: integer)
      -> boolean
@@ -5063,7 +5150,7 @@ ins.get_gyro
 
 @\ *param* ``instance`` — the 0-based index of the gyroscope instance to return.
 
-.. code-block:: lua
+.. code-block::
 
    (method) ins:get_gyro(instance: integer)
      -> Vector3f_ud
@@ -5077,7 +5164,7 @@ ins.get_gyro_health
 
 @\ *param* ``instance`` — the 0-based index of the gyroscope instance to return.
 
-.. code-block:: lua
+.. code-block::
 
    (method) ins:get_gyro_health(instance: integer)
      -> boolean
@@ -5089,7 +5176,7 @@ ins.get_temperature
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) ins:get_temperature(instance: integer)
      -> number
@@ -5103,7 +5190,7 @@ ins.gyros_consistent
 
 @\ *param* ``threshold`` — the allowed threshold in degrees per second
 
-.. code-block:: lua
+.. code-block::
 
    (method) ins:gyros_consistent(threshold: integer)
      -> boolean
@@ -5115,7 +5202,7 @@ iomcu
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -5126,7 +5213,7 @@ iomcu.healthy
 
  Check if the IO is healthy
 
-.. code-block:: lua
+.. code-block::
 
    (method) iomcu:healthy()
      -> boolean
@@ -5138,7 +5225,7 @@ logger
 
  data flash logging to SD card
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -5151,7 +5238,7 @@ logger.log_file_content
 
 @\ *param* ``filename`` — file name
 
-.. code-block:: lua
+.. code-block::
 
    (method) logger:log_file_content(filename: string)
 
@@ -5160,7 +5247,7 @@ logger.log_file_content
 logger.write
 ============
 
- write value to data flash log with given types and names, optional units and multipliers, timestamp will be automatically added
+ write value to data flash log with given types and names with units and multipliers, timestamp will be automatically added
 
 @\ *param* ``name`` — up to 4 characters
 
@@ -5168,15 +5255,19 @@ logger.write
 
 @\ *param* ``format`` — type format string, see https://github.com/ArduPilot/ardupilot/blob/master/libraries/AP_Logger/README.md
 
-@\ *param* ``units`` — optional units string
+@\ *param* ``units`` — units string
 
-@\ *param* ``multipliers`` — optional multipliers string
+@\ *param* ``multipliers`` — multipliers string
 
-@\ *param* ``data1`` — data to be logged, type to match format string
+@\ *param* ``...`` — data to be logged, type to match format string
 
-.. code-block:: lua
+.. code-block::
 
-   (method) logger:write(name: string, labels: string, format: string, units?: string, multipliers?: string, data1: string|number|uint32_t_ud, ...any)
+   (method) logger:write(name: string, labels: string, format: string, units: string, multipliers: string, ...string|number|uint32_t_ud)
+
+.. code-block::
+
+   (method) logger:write(name: string, labels: string, format: string, ...string|number|uint32_t_ud)
 
 ----
 
@@ -5185,7 +5276,7 @@ mavlink
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -5196,7 +5287,7 @@ mavlink.block_command
 
  Block a given MAV_CMD from being procceced by ArduPilot
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink:block_command(comand_id: integer)
      -> boolean
@@ -5208,7 +5299,7 @@ mavlink.init
 
  initializes mavlink
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink:init(num_rx_msgid: number|uint32_t_ud, msg_queue_length: number|uint32_t_ud)
 
@@ -5225,7 +5316,7 @@ mavlink.receive_chan
 
 @\ *return* — receive_timestamp
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink:receive_chan()
      -> string
@@ -5241,7 +5332,7 @@ mavlink.register_rx_msgid
 
 @\ *return* — false if id has been registered already
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink:register_rx_msgid(msg_id: number)
      -> boolean
@@ -5256,7 +5347,7 @@ mavlink.send_chan
 
 @\ *return* — success
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink:send_chan(chan: integer, msgid: integer, message: string)
      -> boolean
@@ -5266,7 +5357,7 @@ mavlink.send_chan
 mavlink_mission_item_int_t
 ==========================
 
-.. code-block:: lua
+.. code-block::
 
    function mavlink_mission_item_int_t()
      -> mavlink_mission_item_int_t_ud
@@ -5281,7 +5372,7 @@ mavlink_mission_item_int_t_ud
 command
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:command()
      -> integer
@@ -5291,7 +5382,7 @@ command
 current
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:current()
      -> integer
@@ -5301,7 +5392,7 @@ current
 frame
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:frame()
      -> integer
@@ -5311,7 +5402,7 @@ frame
 param1
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:param1()
      -> number
@@ -5321,7 +5412,7 @@ param1
 param2
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:param2()
      -> number
@@ -5331,7 +5422,7 @@ param2
 param3
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:param3()
      -> number
@@ -5341,7 +5432,7 @@ param3
 param4
 ------
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:param4()
      -> number
@@ -5351,7 +5442,7 @@ param4
 seq
 ---
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:seq()
      -> integer
@@ -5361,7 +5452,7 @@ seq
 x
 -
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:x()
      -> integer
@@ -5371,7 +5462,7 @@ x
 y
 -
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:y()
      -> integer
@@ -5381,7 +5472,7 @@ y
 z
 -
 
-.. code-block:: lua
+.. code-block::
 
    (method) mavlink_mission_item_int_t_ud:z()
      -> number
@@ -5397,7 +5488,7 @@ micros
 
 @\ *return* — microseconds
 
-.. code-block:: lua
+.. code-block::
 
    function micros()
      -> uint32_t_ud
@@ -5411,7 +5502,7 @@ millis
 
 @\ *return* — milliseconds
 
-.. code-block:: lua
+.. code-block::
 
    function millis()
      -> uint32_t_ud
@@ -5423,7 +5514,7 @@ mission
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -5432,7 +5523,7 @@ mission
 mission.MISSION_COMPLETE
 ========================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -5441,7 +5532,7 @@ mission.MISSION_COMPLETE
 mission.MISSION_RUNNING
 =======================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -5450,7 +5541,7 @@ mission.MISSION_RUNNING
 mission.MISSION_STOPPED
 =======================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -5461,7 +5552,7 @@ mission.clear
 
  clear - clears out mission
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:clear()
      -> boolean
@@ -5473,7 +5564,7 @@ mission.cmd_has_location
 
  returns true if the mission cmd has a location
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:cmd_has_location(cmd: integer)
      -> boolean
@@ -5485,7 +5576,7 @@ mission.get_current_do_cmd_id
 
  get_current_do_cmd_id - returns id of the active "do" command
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:get_current_do_cmd_id()
      -> integer
@@ -5497,7 +5588,7 @@ mission.get_current_nav_id
 
  get_current_nav_id - return the id of the current nav command
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:get_current_nav_id()
      -> integer
@@ -5511,7 +5602,7 @@ mission.get_current_nav_index
  Note that this will return 0 if there is no command. This is
  used in MAVLink reporting of the mission command
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:get_current_nav_index()
      -> integer
@@ -5523,7 +5614,7 @@ mission.get_index_of_jump_tag
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:get_index_of_jump_tag(tag: integer)
      -> integer
@@ -5535,7 +5626,7 @@ mission.get_item
 
  get any WP items in any order in a mavlink-ish kinda way.
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:get_item(index: integer)
      -> mavlink_mission_item_int_t_ud|nil
@@ -5551,7 +5642,7 @@ mission.get_last_jump_tag
  progressed since the tag was seen. While executing the tag, the
  age will be 1. The next NAV command after it will tick the age to 2, and so on.
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:get_last_jump_tag()
      -> integer|nil
@@ -5566,7 +5657,7 @@ mission.get_prev_nav_cmd_id
      if there was no previous nav command it returns AP_MISSION_CMD_ID_NONE (0)
       we do not return the entire command to save on RAM
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:get_prev_nav_cmd_id()
      -> integer
@@ -5578,7 +5669,7 @@ mission.jump_to_abort_landing_sequence
 
  Jump to the landing abort sequence
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:jump_to_abort_landing_sequence()
      -> boolean
@@ -5590,7 +5681,7 @@ mission.jump_to_landing_sequence
 
  Jump the mission to the start of the closest landing sequence. Returns true if one was found
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:jump_to_landing_sequence()
      -> boolean
@@ -5603,7 +5694,7 @@ mission.jump_to_tag
  Set the mission index to the first JUMP_TAG with this tag.
  Returns true on success, else false if no appropriate JUMP_TAG match can be found or if setting the index failed
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:jump_to_tag(tag: integer)
      -> boolean
@@ -5616,7 +5707,7 @@ mission.num_commands
  num_commands - returns total number of commands in the mission
                  this number includes offset 0, the home location
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:num_commands()
      -> integer
@@ -5628,7 +5719,7 @@ mission.set_current_cmd
 
  set_current_cmd - jumps to command specified by index
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:set_current_cmd(index: integer)
      -> boolean
@@ -5640,7 +5731,7 @@ mission.set_item
 
  set any WP items in any order in a mavlink-ish kinda way.
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:set_item(index: integer, item: mavlink_mission_item_int_t_ud)
      -> boolean
@@ -5652,7 +5743,7 @@ mission.state
 
  status - returns the status of the mission (i.e. Mission_Started, Mission_Complete, Mission_Stopped
 
-.. code-block:: lua
+.. code-block::
 
    (method) mission:state()
      -> integer
@@ -5674,7 +5765,7 @@ mission_receive
 
 @\ *return* — command param 4
 
-.. code-block:: lua
+.. code-block::
 
    function mission_receive()
      -> uint32_t_ud|nil
@@ -5688,7 +5779,7 @@ mission_receive
 motor_factor_table
 ==================
 
-.. code-block:: lua
+.. code-block::
 
    function motor_factor_table()
      -> motor_factor_table_ud
@@ -5703,7 +5794,7 @@ motor_factor_table_ud
 pitch
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) motor_factor_table_ud:pitch(index: integer)
      -> number
@@ -5713,7 +5804,7 @@ pitch
 roll
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) motor_factor_table_ud:roll(index: integer)
      -> number
@@ -5723,7 +5814,7 @@ roll
 throttle
 --------
 
-.. code-block:: lua
+.. code-block::
 
    (method) motor_factor_table_ud:throttle(index: integer)
      -> number
@@ -5733,7 +5824,7 @@ throttle
 yaw
 ---
 
-.. code-block:: lua
+.. code-block::
 
    (method) motor_factor_table_ud:yaw(index: integer)
      -> number
@@ -5747,7 +5838,7 @@ motors
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -5758,7 +5849,7 @@ motors.get_desired_spool_state
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_desired_spool_state()
      -> integer
@@ -5770,7 +5861,7 @@ motors.get_forward
 
  get forward motor output
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_forward()
      -> number
@@ -5782,13 +5873,13 @@ motors.get_interlock
 
  Get motors interlock state, the state of motors controlled by AP_Motors, Copter and Quadplane VTOL motors. Not plane forward flight motors.
 
-.. code-block:: lua
+.. code-block::
 
    return #1:
        | true -- motors active
        | false -- motors inactive
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_interlock()
      -> boolean
@@ -5800,7 +5891,7 @@ motors.get_lateral
 
  get lateral motor output
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_lateral()
      -> number
@@ -5812,7 +5903,7 @@ motors.get_pitch
 
  get pitch P+I+D out
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_pitch()
      -> number
@@ -5824,7 +5915,7 @@ motors.get_pitch_ff
 
  get pitch FF out
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_pitch_ff()
      -> number
@@ -5836,7 +5927,7 @@ motors.get_roll
 
  get roll P+I+D
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_roll()
      -> number
@@ -5848,7 +5939,7 @@ motors.get_roll_ff
 
  get roll FF out
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_roll_ff()
      -> number
@@ -5860,7 +5951,7 @@ motors.get_spool_state
 
  get throttle motor output
 
-.. code-block:: lua
+.. code-block::
 
    return #1:
        | '0' -- Shut down
@@ -5869,7 +5960,7 @@ motors.get_spool_state
        | '3' -- Throttle unlimited
        | '4' -- Spooling down
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_spool_state()
      -> integer|'0'|'1'|'2'|'3'...(+1)
@@ -5881,7 +5972,7 @@ motors.get_throttle
 
  get throttle motor output
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_throttle()
      -> number
@@ -5893,7 +5984,7 @@ motors.get_yaw
 
  get yaw P+I+D
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_yaw()
      -> number
@@ -5905,7 +5996,7 @@ motors.get_yaw_ff
 
  get yaw FF output
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:get_yaw_ff()
      -> number
@@ -5917,7 +6008,7 @@ motors.set_external_limits
 
  set external limit flags for each axis to prevent integrator windup
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:set_external_limits(roll: boolean, pitch: boolean, yaw: boolean, throttle_lower: boolean, throttle_upper: boolean)
 
@@ -5928,7 +6019,7 @@ motors.set_frame_string
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) motors:set_frame_string(param1: string)
 
@@ -5939,7 +6030,7 @@ mount
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -5958,7 +6049,7 @@ mount.get_angle_target
 
 @\ *return* — yaw_is_earth_frame
 
-.. code-block:: lua
+.. code-block::
 
    (method) mount:get_angle_target(instance: integer)
      -> number|nil
@@ -5979,7 +6070,7 @@ mount.get_attitude_euler
 
 @\ *return* — yaw_bf_deg
 
-.. code-block:: lua
+.. code-block::
 
    (method) mount:get_attitude_euler(instance: integer)
      -> number|nil
@@ -5993,7 +6084,7 @@ mount.get_location_target
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) mount:get_location_target(instance: integer)
      -> Location_ud|nil
@@ -6005,7 +6096,7 @@ mount.get_mode
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) mount:get_mode(instance: integer)
      -> integer
@@ -6025,7 +6116,7 @@ mount.get_rate_target
 
 @\ *return* — yaw_is_earth_frame
 
-.. code-block:: lua
+.. code-block::
 
    (method) mount:get_rate_target(instance: integer)
      -> number|nil
@@ -6040,7 +6131,7 @@ mount.set_angle_target
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) mount:set_angle_target(instance: integer, roll_deg: number, pitch_deg: number, yaw_deg: number, yaw_is_earth_frame: boolean)
 
@@ -6051,7 +6142,7 @@ mount.set_attitude_euler
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) mount:set_attitude_euler(instance: integer, roll_deg: number, pitch_deg: number, yaw_deg: number)
 
@@ -6062,7 +6153,7 @@ mount.set_mode
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) mount:set_mode(instance: integer, mode: integer)
 
@@ -6073,7 +6164,7 @@ mount.set_rate_target
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) mount:set_rate_target(instance: integer, roll_degs: number, pitch_degs: number, yaw_degs: number, yaw_is_earth_frame: boolean)
 
@@ -6084,7 +6175,7 @@ mount.set_roi_target
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) mount:set_roi_target(instance: integer, target_loc: Location_ud)
 
@@ -6095,7 +6186,7 @@ networking
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6106,7 +6197,7 @@ networking.address_to_str
 
  conver uint32_t address to string
 
-.. code-block:: lua
+.. code-block::
 
    (method) networking:address_to_str(ip4addr: number|uint32_t_ud)
      -> string
@@ -6118,7 +6209,7 @@ networking.get_gateway_active
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) networking:get_gateway_active()
      -> uint32_t_ud
@@ -6130,7 +6221,7 @@ networking.get_ip_active
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) networking:get_ip_active()
      -> uint32_t_ud
@@ -6142,7 +6233,7 @@ networking.get_netmask_active
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) networking:get_netmask_active()
      -> uint32_t_ud
@@ -6154,7 +6245,7 @@ notify
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6165,7 +6256,7 @@ notify.handle_rgb
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) notify:handle_rgb(red: integer, green: integer, blue: integer, rate_hz: integer)
 
@@ -6176,7 +6267,7 @@ notify.handle_rgb_id
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) notify:handle_rgb_id(red: integer, green: integer, blue: integer, id: integer)
 
@@ -6188,7 +6279,7 @@ notify.play_tune
  Plays a MML tune through the buzzer on the vehicle. The tune is provided as a string.
  An online tune tester can be found here: https://firmware.ardupilot.org/Tools/ToneTester/
 
-.. code-block:: lua
+.. code-block::
 
    (method) notify:play_tune(tune: string)
 
@@ -6199,7 +6290,7 @@ notify.release_text
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) notify:release_text(row: integer)
 
@@ -6214,7 +6305,7 @@ notify.send_text
 
 @\ *param* ``row`` — row number to display on, 0 is at the top.
 
-.. code-block:: lua
+.. code-block::
 
    (method) notify:send_text(text: string, row: integer)
 
@@ -6225,7 +6316,7 @@ onvif
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6236,7 +6327,7 @@ onvif.get_pan_tilt_limit_max
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) onvif:get_pan_tilt_limit_max()
      -> Vector2f_ud
@@ -6248,7 +6339,7 @@ onvif.get_pan_tilt_limit_min
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) onvif:get_pan_tilt_limit_min()
      -> Vector2f_ud
@@ -6260,7 +6351,7 @@ onvif.set_absolutemove
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) onvif:set_absolutemove(pan: number, tilt: number, zoom: number)
      -> boolean
@@ -6272,7 +6363,7 @@ onvif.start
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) onvif:start(username: string, password: string, httphostname: string)
      -> boolean
@@ -6284,7 +6375,7 @@ optical_flow
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6295,7 +6386,7 @@ optical_flow.enabled
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) optical_flow:enabled()
      -> boolean
@@ -6307,7 +6398,7 @@ optical_flow.healthy
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) optical_flow:healthy()
      -> boolean
@@ -6319,7 +6410,7 @@ optical_flow.quality
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) optical_flow:quality()
      -> integer
@@ -6331,7 +6422,7 @@ param
 
  Parameter access
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6342,7 +6433,7 @@ param.add_param
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) param:add_param(table_key: integer, param_num: integer, name: string, default_value: number)
      -> boolean
@@ -6354,7 +6445,7 @@ param.add_table
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) param:add_table(table_key: integer, prefix: string, num_params: integer)
      -> boolean
@@ -6370,7 +6461,7 @@ param.get
 
 @\ *return* — nill if parameter was not found
 
-.. code-block:: lua
+.. code-block::
 
    (method) param:get(name: string)
      -> number|nil
@@ -6388,7 +6479,7 @@ param.set
 
 @\ *return* — true if parameter was found
 
-.. code-block:: lua
+.. code-block::
 
    (method) param:set(name: string, value: number)
      -> boolean
@@ -6406,7 +6497,7 @@ param.set_and_save
 
 @\ *return* — true if parameter was found
 
-.. code-block:: lua
+.. code-block::
 
    (method) param:set_and_save(name: string, value: number)
      -> boolean
@@ -6424,7 +6515,7 @@ param.set_default
 
 @\ *return* — true if parameter was found
 
-.. code-block:: lua
+.. code-block::
 
    (method) param:set_default(name: string, value: number)
      -> boolean
@@ -6436,7 +6527,7 @@ periph
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6447,7 +6538,7 @@ periph.can_printf
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) periph:can_printf(text: string)
 
@@ -6458,7 +6549,7 @@ periph.get_vehicle_state
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) periph:get_vehicle_state()
      -> uint32_t_ud
@@ -6470,7 +6561,7 @@ periph.get_yaw_earth
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) periph:get_yaw_earth()
      -> number
@@ -6482,7 +6573,7 @@ periph.reboot
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) periph:reboot(hold_in_bootloader: boolean)
 
@@ -6493,7 +6584,7 @@ precland
 
  precision landing access
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6504,7 +6595,7 @@ precland.get_last_valid_target_ms
 
  get the time of the last valid target
 
-.. code-block:: lua
+.. code-block::
 
    (method) precland:get_last_valid_target_ms()
      -> uint32_t_ud
@@ -6516,7 +6607,7 @@ precland.get_target_location
 
  get Location of target or nil if target not acquired
 
-.. code-block:: lua
+.. code-block::
 
    (method) precland:get_target_location()
      -> Location_ud|nil
@@ -6528,7 +6619,7 @@ precland.get_target_velocity
 
  get NE velocity of target or nil if not available
 
-.. code-block:: lua
+.. code-block::
 
    (method) precland:get_target_velocity()
      -> Vector2f_ud|nil
@@ -6540,7 +6631,7 @@ precland.healthy
 
  return true if precland system is healthy
 
-.. code-block:: lua
+.. code-block::
 
    (method) precland:healthy()
      -> boolean
@@ -6552,7 +6643,7 @@ precland.target_acquired
 
  return true if target is acquired
 
-.. code-block:: lua
+.. code-block::
 
    (method) precland:target_acquired()
      -> boolean
@@ -6566,7 +6657,7 @@ print
  If no MAVLink the value will be sent over can
  equivalent to gcs:send_text(7, text) or periph:can_printf(text)
 
-.. code-block:: lua
+.. code-block::
 
    function print(text: string|number)
 
@@ -6577,7 +6668,7 @@ proximity
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6588,7 +6679,7 @@ proximity.get_backend
 
  get backend based on proximity instance provided
 
-.. code-block:: lua
+.. code-block::
 
    (method) proximity:get_backend(instance: integer)
      -> AP_Proximity_Backend_ud|nil
@@ -6600,7 +6691,7 @@ proximity.get_closest_object
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) proximity:get_closest_object()
      -> number|nil
@@ -6613,7 +6704,7 @@ proximity.get_object_angle_and_distance
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) proximity:get_object_angle_and_distance(object_number: integer)
      -> number|nil
@@ -6626,7 +6717,7 @@ proximity.get_object_count
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) proximity:get_object_count()
      -> integer
@@ -6638,7 +6729,7 @@ proximity.get_status
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) proximity:get_status()
      -> integer
@@ -6650,7 +6741,7 @@ proximity.num_sensors
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) proximity:num_sensors()
      -> integer
@@ -6662,7 +6753,7 @@ quadplane
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6673,7 +6764,7 @@ quadplane.abort_landing
 
  abort a VTOL landing, climbing back up
 
-.. code-block:: lua
+.. code-block::
 
    (method) quadplane:abort_landing()
      -> boolean
@@ -6685,7 +6776,7 @@ quadplane.in_assisted_flight
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) quadplane:in_assisted_flight()
      -> boolean
@@ -6697,7 +6788,7 @@ quadplane.in_vtol_land_descent
 
  true in descent phase of VTOL landing
 
-.. code-block:: lua
+.. code-block::
 
    (method) quadplane:in_vtol_land_descent()
      -> boolean
@@ -6709,7 +6800,7 @@ quadplane.in_vtol_mode
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) quadplane:in_vtol_mode()
      -> boolean
@@ -6721,7 +6812,7 @@ rangefinder
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6732,7 +6823,7 @@ rangefinder.distance_cm_orient
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:distance_cm_orient(orientation: integer)
      -> integer
@@ -6744,7 +6835,7 @@ rangefinder.get_backend
 
  get backend based on rangefinder instance provided
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:get_backend(rangefinder_instance: integer)
      -> AP_RangeFinder_Backend_ud|nil
@@ -6756,7 +6847,7 @@ rangefinder.get_pos_offset_orient
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:get_pos_offset_orient(orientation: integer)
      -> Vector3f_ud
@@ -6768,7 +6859,7 @@ rangefinder.ground_clearance_cm_orient
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:ground_clearance_cm_orient(orientation: integer)
      -> integer
@@ -6780,7 +6871,7 @@ rangefinder.has_data_orient
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:has_data_orient(orientation: integer)
      -> boolean
@@ -6792,7 +6883,7 @@ rangefinder.has_orientation
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:has_orientation(orientation: integer)
      -> boolean
@@ -6804,7 +6895,7 @@ rangefinder.max_distance_cm_orient
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:max_distance_cm_orient(orientation: integer)
      -> integer
@@ -6816,7 +6907,7 @@ rangefinder.min_distance_cm_orient
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:min_distance_cm_orient(orientation: integer)
      -> integer
@@ -6828,7 +6919,7 @@ rangefinder.num_sensors
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:num_sensors()
      -> integer
@@ -6840,7 +6931,7 @@ rangefinder.signal_quality_pct_orient
 
  Current distance measurement signal quality for range finder at this orientation
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:signal_quality_pct_orient(orientation: integer)
      -> integer
@@ -6852,7 +6943,7 @@ rangefinder.status_orient
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rangefinder:status_orient(orientation: integer)
      -> integer
@@ -6864,7 +6955,7 @@ rc
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6875,7 +6966,7 @@ rc.find_channel_for_option
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rc:find_channel_for_option(aux_fun: integer)
      -> RC_Channel_ud|nil
@@ -6887,7 +6978,7 @@ rc.get_aux_cached
 
  return cached level of aux function
 
-.. code-block:: lua
+.. code-block::
 
    (method) rc:get_aux_cached(aux_fn: integer)
      -> integer|nil
@@ -6899,7 +6990,7 @@ rc.get_channel
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rc:get_channel(chan_num: integer)
      -> RC_Channel_ud|nil
@@ -6915,7 +7006,7 @@ rc.get_pwm
 
 @\ *return* — pwm input or nil if not availables
 
-.. code-block:: lua
+.. code-block::
 
    (method) rc:get_pwm(chan_num: integer)
      -> integer|nil
@@ -6927,7 +7018,7 @@ rc.has_valid_input
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) rc:has_valid_input()
      -> boolean
@@ -6939,14 +7030,14 @@ rc.run_aux_function
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    ch_flag:
        | '0' -- low
        | '1' -- middle
        | '2' -- high
 
-.. code-block:: lua
+.. code-block::
 
    (method) rc:run_aux_function(aux_fun: integer, ch_flag: integer|'0'|'1'|'2')
      -> boolean
@@ -6958,7 +7049,7 @@ relay
 
  The relay library provides access to controlling relay outputs.
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -6971,7 +7062,7 @@ relay.enabled
 
 @\ *param* ``instance`` — relay instance
 
-.. code-block:: lua
+.. code-block::
 
    (method) relay:enabled(instance: integer)
      -> boolean
@@ -6987,7 +7078,7 @@ relay.get
 
 @\ *return* — relay state
 
-.. code-block:: lua
+.. code-block::
 
    (method) relay:get(instance: integer)
      -> integer
@@ -7001,7 +7092,7 @@ relay.off
 
 @\ *param* ``instance`` — relay instance
 
-.. code-block:: lua
+.. code-block::
 
    (method) relay:off(instance: integer)
 
@@ -7014,7 +7105,7 @@ relay.on
 
 @\ *param* ``instance`` — relay instance
 
-.. code-block:: lua
+.. code-block::
 
    (method) relay:on(instance: integer)
 
@@ -7027,7 +7118,7 @@ relay.toggle
 
 @\ *param* ``instance`` — relay instance
 
-.. code-block:: lua
+.. code-block::
 
    (method) relay:toggle(instance: integer)
 
@@ -7044,7 +7135,7 @@ desc
 
 @\ *return* — error number
 
-.. code-block:: lua
+.. code-block::
 
    function remove(filename: string)
      -> boolean|nil
@@ -7058,7 +7149,7 @@ rtc
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -7083,7 +7174,7 @@ rtc.clock_s_to_date_fields
 
 @\ *return* — weekday 0-6, sunday is 0
 
-.. code-block:: lua
+.. code-block::
 
    (method) rtc:clock_s_to_date_fields(param1: number|uint32_t_ud)
      -> integer|nil
@@ -7113,7 +7204,7 @@ rtc.date_fields_to_clock_s
 
 @\ *param* ``sec`` — 0-60
 
-.. code-block:: lua
+.. code-block::
 
    (method) rtc:date_fields_to_clock_s(year: integer, month: integer, day: integer, hour: integer, min: integer, sec: integer)
      -> uint32_t_ud
@@ -7125,7 +7216,7 @@ scripting
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -7136,7 +7227,7 @@ scripting.restart_all
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) scripting:restart_all()
 
@@ -7147,7 +7238,7 @@ serial
 
  Serial ports
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -7156,7 +7247,7 @@ serial
 serial.find_serial
 ==================
 
- Returns the UART instance that allows connections from scripts (those with SERIALx_PROTOCOL = 28`).
+ Returns the UART instance that allows connections from scripts (those with SERIALx_PROTOCOL = 28).
  For instance = 0, returns first such UART, second for instance = 1, and so on.
  If such an instance is not found, returns nil.
 
@@ -7164,7 +7255,7 @@ serial.find_serial
 
 @\ *return* — the requested UART instance available for scripting, or nil if none.
 
-.. code-block:: lua
+.. code-block::
 
    (method) serial:find_serial(instance: integer)
      -> AP_HAL__UARTDriver_ud|nil
@@ -7176,7 +7267,7 @@ serialLED
 
  This library allows the control of RGB LED strings via an output reserved for scripting and selected by SERVOx_FUNCTION = 94 thru 109 (Script Out 1 thru 16)
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -7191,7 +7282,7 @@ serialLED.send
 
 @\ *return* — true if successful
 
-.. code-block:: lua
+.. code-block::
 
    (method) serialLED:send(chan: integer)
      -> boolean
@@ -7215,7 +7306,7 @@ serialLED.set_RGB
 
 @\ *return* — true if successful
 
-.. code-block:: lua
+.. code-block::
 
    (method) serialLED:set_RGB(chan: integer, led_index: integer, red: integer, green: integer, blue: integer)
      -> boolean
@@ -7233,7 +7324,7 @@ serialLED.set_num_neopixel
 
 @\ *return* — true if successful
 
-.. code-block:: lua
+.. code-block::
 
    (method) serialLED:set_num_neopixel(chan: integer, num_leds: integer)
      -> boolean
@@ -7251,7 +7342,7 @@ serialLED.set_num_neopixel_rgb
 
 @\ *return* — true if successful
 
-.. code-block:: lua
+.. code-block::
 
    (method) serialLED:set_num_neopixel_rgb(chan: integer, num_leds: integer)
      -> boolean
@@ -7269,7 +7360,7 @@ serialLED.set_num_profiled
 
 @\ *return* — true if successful
 
-.. code-block:: lua
+.. code-block::
 
    (method) serialLED:set_num_profiled(chan: integer, num_leds: integer)
      -> boolean
@@ -7279,7 +7370,7 @@ serialLED.set_num_profiled
 stat_t
 ======
 
-.. code-block:: lua
+.. code-block::
 
    function stat_t()
      -> stat_t_ud
@@ -7294,7 +7385,7 @@ stat_t_ud
 atime
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) stat_t_ud:atime()
      -> uint32_t_ud
@@ -7304,7 +7395,7 @@ atime
 ctime
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) stat_t_ud:ctime()
      -> uint32_t_ud
@@ -7314,7 +7405,7 @@ ctime
 is_directory
 ------------
 
-.. code-block:: lua
+.. code-block::
 
    (method) stat_t_ud:is_directory()
      -> boolean
@@ -7324,7 +7415,7 @@ is_directory
 mode
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) stat_t_ud:mode()
      -> integer
@@ -7334,7 +7425,7 @@ mode
 mtime
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) stat_t_ud:mtime()
      -> uint32_t_ud
@@ -7344,7 +7435,7 @@ mtime
 size
 ----
 
-.. code-block:: lua
+.. code-block::
 
    (method) stat_t_ud:size()
      -> uint32_t_ud
@@ -7358,7 +7449,7 @@ sub
 
  Sub singleton
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -7369,7 +7460,7 @@ sub.get_and_clear_button_count
 
  Get count of joystick button presses, then clear count
 
-.. code-block:: lua
+.. code-block::
 
    (method) sub:get_and_clear_button_count(index: integer)
      -> integer
@@ -7381,7 +7472,7 @@ sub.get_rangefinder_target_cm
 
  SURFTRAK mode: return the rangefinder target in cm
 
-.. code-block:: lua
+.. code-block::
 
    (method) sub:get_rangefinder_target_cm()
      -> number
@@ -7393,7 +7484,7 @@ sub.is_button_pressed
 
  Return true if joystick button is currently pressed
 
-.. code-block:: lua
+.. code-block::
 
    (method) sub:is_button_pressed(index: integer)
      -> boolean
@@ -7405,7 +7496,7 @@ sub.rangefinder_alt_ok
 
  Return true if rangefinder is healthy, includes a check for good signal quality
 
-.. code-block:: lua
+.. code-block::
 
    (method) sub:rangefinder_alt_ok()
      -> boolean
@@ -7417,7 +7508,7 @@ sub.set_rangefinder_target_cm
 
  SURFTRAK mode: set the rangefinder target in cm, return true if successful
 
-.. code-block:: lua
+.. code-block::
 
    (method) sub:set_rangefinder_target_cm(new_target_cm: number)
      -> boolean
@@ -7429,7 +7520,7 @@ terrain
 
  The terrain library provides access to checking heights against a terrain database.
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -7438,7 +7529,7 @@ terrain
 terrain.TerrainStatusDisabled
 =============================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -7447,7 +7538,7 @@ terrain.TerrainStatusDisabled
 terrain.TerrainStatusOK
 =======================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -7456,7 +7547,7 @@ terrain.TerrainStatusOK
 terrain.TerrainStatusUnhealthy
 ==============================
 
-.. code-block:: lua
+.. code-block::
 
    integer
 
@@ -7467,7 +7558,7 @@ terrain.enabled
 
  Returns true if terrain is enabled.
 
-.. code-block:: lua
+.. code-block::
 
    (method) terrain:enabled()
      -> boolean
@@ -7482,7 +7573,7 @@ terrain.height_above_terrain
 
 @\ *return* — height above terrain in meters if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) terrain:height_above_terrain(extrapolate: boolean)
      -> number|nil
@@ -7500,7 +7591,7 @@ terrain.height_amsl
 
 @\ *return* — amsl altitude of terrain at given locaiton in meters
 
-.. code-block:: lua
+.. code-block::
 
    (method) terrain:height_amsl(loc: Location_ud, corrected: boolean)
      -> number|nil
@@ -7516,7 +7607,7 @@ terrain.height_terrain_difference_home
 
 @\ *return* — height difference in meters if available
 
-.. code-block:: lua
+.. code-block::
 
    (method) terrain:height_terrain_difference_home(extrapolate: boolean)
      -> number|nil
@@ -7530,7 +7621,7 @@ terrain.status
 
 @\ *return* — terrain status
 
-.. code-block:: lua
+.. code-block::
 
    (method) terrain:status()
      -> integer
@@ -7542,7 +7633,7 @@ uint32_t
 
  create uint32_t_ud with optional value
 
-.. code-block:: lua
+.. code-block::
 
    function uint32_t(value?: number|uint32_t_ud)
      -> uint32_t_ud
@@ -7555,7 +7646,7 @@ uint32_t_ud
 tofloat
 -------
 
-.. code-block:: lua
+.. code-block::
 
    (method) uint32_t_ud:tofloat()
      -> number
@@ -7565,7 +7656,7 @@ tofloat
 toint
 -----
 
-.. code-block:: lua
+.. code-block::
 
    (method) uint32_t_ud:toint()
      -> integer
@@ -7579,7 +7670,7 @@ vehicle
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -7590,7 +7681,7 @@ vehicle.get_circle_radius
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_circle_radius()
      -> number|nil
@@ -7602,7 +7693,7 @@ vehicle.get_control_mode_reason
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_control_mode_reason()
      -> integer
@@ -7614,7 +7705,7 @@ vehicle.get_control_output
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    control_output:
        | '1' -- Roll
@@ -7626,7 +7717,7 @@ vehicle.get_control_output
        | '7' -- WingSail
        | '8' -- Walking_Height
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_control_output(control_output: integer|'1'|'2'|'3'|'4'...(+4))
      -> number|nil
@@ -7640,7 +7731,7 @@ vehicle.get_likely_flying
 
 @\ *return* — true if likely flying
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_likely_flying()
      -> boolean
@@ -7654,7 +7745,7 @@ vehicle.get_mode
 
 @\ *return* — mode number. Values for each vehcile type can be found here: https://mavlink.io/en/messages/ardupilotmega.html#PLANE_MODE
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_mode()
      -> integer
@@ -7666,7 +7757,7 @@ vehicle.get_pan_tilt_norm
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_pan_tilt_norm()
      -> number|nil
@@ -7679,7 +7770,7 @@ vehicle.get_steering_and_throttle
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_steering_and_throttle()
      -> number|nil
@@ -7694,7 +7785,7 @@ vehicle.get_target_location
 
 @\ *return* — target location
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_target_location()
      -> Location_ud|nil
@@ -7708,7 +7799,7 @@ vehicle.get_time_flying_ms
 
 @\ *return* — flying time in milliseconds
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_time_flying_ms()
      -> uint32_t_ud
@@ -7720,7 +7811,7 @@ vehicle.get_wp_bearing_deg
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_wp_bearing_deg()
      -> number|nil
@@ -7732,7 +7823,7 @@ vehicle.get_wp_crosstrack_error_m
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_wp_crosstrack_error_m()
      -> number|nil
@@ -7744,7 +7835,7 @@ vehicle.get_wp_distance_m
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:get_wp_distance_m()
      -> number|nil
@@ -7756,7 +7847,7 @@ vehicle.has_ekf_failsafed
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:has_ekf_failsafed()
      -> boolean
@@ -7768,7 +7859,7 @@ vehicle.is_landing
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:is_landing()
      -> boolean
@@ -7780,7 +7871,7 @@ vehicle.is_taking_off
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:is_taking_off()
      -> boolean
@@ -7804,7 +7895,7 @@ vehicle.nav_script_time
 
 @\ *return* — arg4
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:nav_script_time()
      -> integer|nil
@@ -7821,7 +7912,7 @@ vehicle.nav_script_time_done
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:nav_script_time_done(param1: integer)
 
@@ -7832,7 +7923,7 @@ vehicle.nav_scripting_enable
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:nav_scripting_enable(param1: integer)
      -> boolean
@@ -7844,7 +7935,7 @@ vehicle.reboot
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:reboot(hold_in_bootloader: boolean)
 
@@ -7855,7 +7946,7 @@ vehicle.set_circle_rate
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_circle_rate(rate_dps: number)
      -> boolean
@@ -7867,7 +7958,7 @@ vehicle.set_desired_speed
 
  desc sets autopilot nav speed (Copter and Rover)
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_desired_speed(param1: number)
      -> boolean
@@ -7879,7 +7970,7 @@ vehicle.set_desired_turn_rate_and_speed
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_desired_turn_rate_and_speed(param1: number, param2: number)
      -> boolean
@@ -7891,7 +7982,7 @@ vehicle.set_land_descent_rate
 
  override landing descent rate, times out in 1s
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_land_descent_rate(rate: number)
      -> boolean
@@ -7907,7 +7998,7 @@ vehicle.set_mode
 
 @\ *return* — success
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_mode(mode_number: integer)
      -> boolean
@@ -7919,7 +8010,7 @@ vehicle.set_rudder_offset
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_rudder_offset(rudder_pct: number, run_yaw_rate_control: boolean)
 
@@ -7930,7 +8021,7 @@ vehicle.set_steering_and_throttle
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_steering_and_throttle(steering: number, throttle: number)
      -> boolean
@@ -7942,7 +8033,7 @@ vehicle.set_target_angle_and_climbrate
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_target_angle_and_climbrate(roll_deg: number, pitch_deg: number, yaw_deg: number, climb_rate_ms: number, use_yaw_rate: boolean, yaw_rate_degs: number)
      -> boolean
@@ -7958,7 +8049,7 @@ vehicle.set_target_location
 
 @\ *return* — true on success
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_target_location(target_loc: Location_ud)
      -> boolean
@@ -7970,7 +8061,7 @@ vehicle.set_target_pos_NED
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_target_pos_NED(target_pos: Vector3f_ud, use_yaw: boolean, yaw_deg: number, use_yaw_rate: boolean, yaw_rate_degs: number, yaw_relative: boolean, terrain_alt: boolean)
      -> boolean
@@ -7982,7 +8073,7 @@ vehicle.set_target_posvel_NED
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_target_posvel_NED(target_pos: Vector3f_ud, target_vel: Vector3f_ud)
      -> boolean
@@ -7994,7 +8085,7 @@ vehicle.set_target_posvelaccel_NED
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_target_posvelaccel_NED(target_pos: Vector3f_ud, target_vel: Vector3f_ud, target_accel: Vector3f_ud, use_yaw: boolean, yaw_deg: number, use_yaw_rate: boolean, yaw_rate_degs: number, yaw_relative: boolean)
      -> boolean
@@ -8014,7 +8105,7 @@ vehicle.set_target_throttle_rate_rpy
 
 @\ *param* ``param4`` — yaw rate deg/s
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_target_throttle_rate_rpy(param1: number, param2: number, param3: number, param4: number)
 
@@ -8025,7 +8116,7 @@ vehicle.set_target_velaccel_NED
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_target_velaccel_NED(target_vel: Vector3f_ud, target_accel: Vector3f_ud, use_yaw: boolean, yaw_deg: number, use_yaw_rate: boolean, yaw_rate_degs: number, yaw_relative: boolean)
      -> boolean
@@ -8041,7 +8132,7 @@ vehicle.set_target_velocity_NED
 
 @\ *return* — true on success
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_target_velocity_NED(vel_ned: Vector3f_ud)
      -> boolean
@@ -8053,7 +8144,7 @@ vehicle.set_velocity_match
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:set_velocity_match(param1: Vector2f_ud)
      -> boolean
@@ -8069,7 +8160,7 @@ vehicle.start_takeoff
 
 @\ *return* — true on success
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:start_takeoff(alt: number)
      -> boolean
@@ -8085,7 +8176,7 @@ vehicle.update_target_location
 
 @\ *param* ``new_target`` — new target
 
-.. code-block:: lua
+.. code-block::
 
    (method) vehicle:update_target_location(current_target: Location_ud, new_target: Location_ud)
      -> boolean
@@ -8097,7 +8188,7 @@ visual_odom
 
  visual odometry object
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -8108,7 +8199,7 @@ visual_odom.healthy
 
  visual odometry health
 
-.. code-block:: lua
+.. code-block::
 
    (method) visual_odom:healthy()
      -> boolean
@@ -8120,7 +8211,7 @@ visual_odom.quality
 
  visual odometry quality as a percentage from 1 to 100 or 0 if unknown
 
-.. code-block:: lua
+.. code-block::
 
    (method) visual_odom:quality()
      -> integer
@@ -8132,7 +8223,7 @@ winch
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    table
 
@@ -8143,7 +8234,7 @@ winch.get_rate_max
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) winch:get_rate_max()
      -> number
@@ -8155,7 +8246,7 @@ winch.healthy
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) winch:healthy()
      -> boolean
@@ -8167,7 +8258,7 @@ winch.relax
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) winch:relax()
 
@@ -8178,7 +8269,7 @@ winch.release_length
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) winch:release_length(param1: number)
 
@@ -8189,6 +8280,6 @@ winch.set_desired_rate
 
  desc
 
-.. code-block:: lua
+.. code-block::
 
    (method) winch:set_desired_rate(param1: number)
