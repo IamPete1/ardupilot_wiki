@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 '''
 This script fetches the latest version of the lua docs file from GitHub actions is passed a GitHub token.
@@ -14,18 +14,22 @@ import io
 
 def download_artifact(token):
     import requests
-    from agithub.GitHub import GitHub
-    client = GitHub()
 
     headers = {
         "Authorization": "token " + token,
         "User-Agent": "Python",
     }
 
-    status, data = client.repos.ArduPilot.ardupilot.actions.artifacts.get(name='Docs')
+    response = requests.get(
+        "https://api.github.com/repos/ArduPilot/ardupilot/actions/artifacts",
+        params={"name": "Docs"},
+        headers=headers,
+    )
 
-    if status != 200:
+    if response.status_code != 200:
         raise Exception("API request failed")
+
+    data = response.json()
 
     download_url = None
     for artifact in data["artifacts"]:
@@ -42,7 +46,8 @@ def download_artifact(token):
 
     # download
     lua_docs_name = os.path.join(os.getcwd(), 'docs.zip')
-    open(lua_docs_name, 'wb').write(requests.get(artifact["archive_download_url"], headers = headers).content)
+    with open(lua_docs_name, 'wb') as f:
+        f.write(requests.get(download_url, headers=headers).content)
 
     return lua_docs_name
 
@@ -57,7 +62,7 @@ if __name__ == '__main__':
 
     opts, args = parser.parse_args()
 
-    have_token = opts.token != None
+    have_token = opts.token is not None
 
     if not have_token and (len(args) == 0):
         raise Exception("Need token or path")
@@ -78,6 +83,8 @@ if __name__ == '__main__':
         extract_to = (docs / "../scripting_docs").resolve()
         shutil.unpack_archive(docs, extract_to)
         docs = (extract_to / "ScriptingDocs.md").resolve()
+        if not docs.exists():
+            raise Exception("ScriptingDocs.md not found in extracted archive at: %s" % docs)
 
     if docs.suffix != '.md':
         raise Exception("Expected .md file got: %s" % docs)
@@ -89,18 +96,14 @@ if __name__ == '__main__':
     except ImportError:
         print("Import m2r2 failed")
         print("Install with: python3 -m pip install m2r2")
-        sys.exit(0)
+        sys.exit(1)
 
 
     # Output converted to a file.
-    rst = (pathlib.Path(__file__) / "../common/source/ScriptingDocs.rst").resolve()
-    f = open(rst, 'w')
-
-    # Do find and replace on code blocks
-    for line in io.StringIO(readme):
-        if line.startswith(".. code-block:: lua"):
-            line = line.replace(" lua", "")
-
-        f.write(line)
-
-    f.close()
+    rst = (pathlib.Path(__file__) / "../common/source/docs/ScriptingDocs.rst").resolve()
+    with open(rst, 'w') as f:
+        # Do find and replace on code blocks
+        for line in io.StringIO(readme):
+            if line.startswith(".. code-block:: lua"):
+                line = line.replace(" lua", "")
+            f.write(line)
